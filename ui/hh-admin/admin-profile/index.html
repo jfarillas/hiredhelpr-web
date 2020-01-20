@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Admin</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      href="../../vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="../../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../js/htmlinclude.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/issuecollector.js"></script>
+    <script type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-light custom-nav profile-header"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="notification nav-item active">
+                <button class="nav-link notif-btn" id="notif-btn">
+                  <span
+                    class="badge badge-notification badge-pill noti-icon-badge"
+                    >3</span
+                  >
+                  <img src="../../images/notif-bell-white.png" />
+                </button>
+              </li>
+
+              <li class="nav-item dropdown header-arrow">
+                <a
+                  class="nav-link dropdown-toggle rectangle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  JA
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item" href="../admin-profile/">Profile</a>
+                  <a class="dropdown-item" href="/payments/"
+                    >Payment Accounts</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="../sign-in.html">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!--NOTIFICATION BOX-->
+        <div class="notif-box" id="notification-box">
+          <div class="notif-arrow"></div>
+          <div class="notif-row">
+            <div class="notif-txt">
+              <p>
+                1234 Bobby Lane, Austin TX 77001 -
+                <span class="notif-green">Weekly Service Complete - $150</span>
+                to be sent on 09/10/19
+              </p>
+            </div>
+            <div class="notif-btn">
+              <a href="#"><p>View Status</p></a>
+            </div>
+          </div>
+          <div class="notif-row">
+            <div class="notif-txt">
+              <p>
+                1234 Bobby Lane, Austin TX 77001 -
+                <span class="notif-lblue">Weekly Service Complete - $150</span>
+                to be sent on 09/10/19
+              </p>
+            </div>
+            <div class="notif-btn">
+              <a href="#"><p>Go to Calendar</p></a>
+            </div>
+          </div>
+          <div class="notif-row">
+            <div class="notif-txt">
+              <p>
+                1234 Bobby Lane, Austin TX 77001 -
+                <span class="notif-blue">Weekly Service Complete - $150</span>
+                to be sent on 09/10/19
+              </p>
+            </div>
+            <div class="notif-btn">
+              <a href="#"><p>View Status</p></a>
+            </div>
+          </div>
+          <div class="notif-row">
+            <div class="notif-txt">
+              <p>
+                1234 Bobby Lane, Austin TX 77001 -
+                <span class="notif-red">Weekly Service Complete - $150</span> to
+                be sent on 09/10/19
+              </p>
+            </div>
+            <div class="notif-btn">
+              <a href="#"><p>View Status</p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-header">
+          <div class="container">
+            <div class="content-title">
+              <h1 class="profile-name">Mary Sanders</h1>
+            </div>
+            <div>
+              <ul class="nav nav-tabs profile-navtabs">
+                <li>
+                  <a data-toggle="tab" href="#profile" class="active"
+                    >Profile</a
+                  >
+                </li>
+                <li><a data-toggle="tab" href="#password">Password</a></li>
+                <li>
+                  <a data-toggle="tab" href="#teamManagement"
+                    >Team Management</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content profile-tab-content">
+            <div id="profile" class="tab-pane fade in active">
+              <div class="signupfields profile-center-form">
+                <div class="form-field">
+                  <label>ADMIN NAME</label>
+                  <input type="text" name="name" value="Mary Sanders" />
+                </div>
+                <div class="form-field">
+                  <label>WORK EMAIL ADDRESS</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value="mary.sanders@hiredhelpr.com"
+                  />
+                </div>
+                <div class="main-button-action mt-4 text-center">
+                  <button
+                    onClick="location.href='home.html'"
+                    class="btn blue-btn"
+                  >
+                    Update Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div id="password" class="tab-pane fade">
+              <div class="signupfields profile-center-form">
+                <div class="form-field">
+                  <label>OLD PASSWORD</label>
+                  <input type="text" name="oldpassword" />
+                </div>
+                <div class="form-field">
+                  <label>NEW PASSWORD</label>
+                  <input type="text" name="newpassword" />
+                </div>
+                <div class="form-field">
+                  <label>CONFIRM NEW PASSWORD</label>
+                  <input type="text" name="confirmpassword" />
+                </div>
+                <div class="main-button-action mt-4 text-center">
+                  <button
+                    onClick="location.href='home.html'"
+                    class="btn blue-btn"
+                  >
+                    Change
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div id="teamManagement" class="tab-pane fade">
+              <div class="signupfields profile-center-form">
+                <h4>Invite team members to create an account</h4>
+                <div class="form-field mb-2">
+                  <label>ENTER EMAIL ADDRESS</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Invite by email address"
+                  />
+                </div>
+                <div class="member-list-wrapper">
+                  <div class="member-list">
+                    <div class="member-initial active">
+                      <p>MS</p>
+                    </div>
+                    <div class="member-list-name">
+                      <p class="member-name admin">
+                        Mary Sanders <span>(Admin)</span>
+                      </p>
+                      <p class="member-email">mary.sanders@hiredhelpr.com</p>
+                    </div>
+                    <div class="member-list-action">
+                      <img src="../../images/checkmark.png" />
+                    </div>
+                  </div>
+                  <div class="member-list">
+                    <div class="member-initial">
+                      <p>-</p>
+                    </div>
+                    <div class="member-list-name">
+                      <p class="member-name">Alexander Ajayi <span></span></p>
+                      <p class="member-email">
+                        Invite sent! - Not yet responded.
+                      </p>
+                    </div>
+                    <div class="member-list-action">
+                      <img src="../../images/checkmark.png" />
+                      <!--ICON TO REMOVE-->
+                      <!-- <img src="../images/plusmark.png"> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="main-button-action pt-5 pb-5 text-center">
+                  <!--BUTTON TO INVITE-->
+                  <button
+                    onClick="location.href='home.html'"
+                    class="btn blue-btn"
+                  >
+                    Send Invite
+                  </button>
+                  <!--BUTTON TO REMOVE-->
+                  <!-- <button
+                    onClick="location.href='home.html'"
+                    class="btn green-btn"
+                  >
+                    Remove Person
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      includeHTML();
+
+      $(".tab-btn").click(function() {
+        $(this)
+          .addClass("active")
+          .siblings()
+          .removeClass("active");
+      });
+
+      jQuery(document).ready(function($) {
+        $(".btn1").on({
+          click: function() {
+            $(".modal-img").css(
+              "background-image",
+              "url(../../images/tab1.jpg)"
+            );
+          }
+        });
+        $(".btn2").on({
+          click: function() {
+            $(".modal-img").css(
+              "background-image",
+              "url(../../images/tab2.jpg)"
+            );
+          }
+        });
+        $(".btn3").on({
+          click: function() {
+            $(".modal-img").css(
+              "background-image",
+              "url(../../images/tab3.jpg)"
+            );
+          }
+        });
+        $(".btn4").on({
+          click: function() {
+            $(".modal-img").css(
+              "background-image",
+              "url(../../images/tab4.jpg)"
+            );
+          }
+        });
+        $(".btn5").on({
+          click: function() {
+            $(".modal-img").css(
+              "background-image",
+              "url(../../images/tab5.jpg)"
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

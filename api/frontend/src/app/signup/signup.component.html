@@ -1,0 +1,146 @@
+<div class="container-fluid h-100">
+  <div class="row justify-content-center h-100">
+    <div class="col-6 hidden-md-down left-pane">
+      <div class="logo"><span class="logo-main">Hired</span><span class="helpr-main">Helpr</span></div>
+      <app-signupcarousel></app-signupcarousel>
+    </div>
+    <div class="col-6">
+      <div class="row mt-5  animated animatedFadeInUp fadeInUp">
+        <div class="col-12 pl-5 mb-5">
+          <h2 class="pb-3">Nationwide Pool Care Made Easy</h2>
+          <sub>We Service Pools Forever with No Hassle. </sub>
+        </div>
+        <div class="col-7 mt-5 ml-5 signupfields">
+          <form #signupForm="ngForm" (keydown.enter)="$event.preventDefault()" novalidate>
+            <div *ngIf="page === 1">
+              <div class="form-field">
+                <label>WORK EMAIL ADDRESS</label>
+                <input name="email" ngModel required email="true" #email="ngModel" placeholder="Work Email Address" />
+                <small [hidden]="email.valid || email.untouched">
+                  Email is Required.
+                </small>
+              </div>
+              <div class="form-field">
+                <label>FULL NAME</label>
+                <input type="text" name="fullname" ngModel required #fullname="ngModel" placeholder="Full Name" />
+                <small [hidden]="fullname.valid || fullname.untouched">
+                  Full Name is Required.
+                </small>
+              </div>
+              <div class="form-field">
+                <label>PASSWORD (8 OR MORE CHARACTERS)</label>
+                <input
+                  type="password"
+                  name="password"
+                  ngModel
+                  required
+                  #password="ngModel"
+                  placeholder="Password"
+                  minlength="8"
+                />
+                <small [hidden]="password.valid || password.untouched">
+                  Password is Required.
+                </small>
+              </div>
+              <div class="form-field">
+                <label> CONFIRM PASSWORD (8 OR MORE CHARACTERS)</label>
+                <input
+                  type="password"
+                  name="confirm_password"
+                  ngModel
+                  required
+                  #confirm_password="ngModel"
+                  placeholder="Confirm Password"
+                  minlength="8"
+                />
+                <small [hidden]="confirm_password.valid || confirm_password.untouched">
+                  Please Confirm Password.
+                </small>
+                <small
+                  [hidden]="
+                    (!password.valid && !password.touched) ||
+                    !confirm_password.touched ||
+                    confirm_password.value === password.value
+                  "
+                >
+                  <br />
+                  Password Do Not Match.
+                </small>
+              </div>
+              <div class="main-button-action mt-4">
+                <button
+                  class="btn blue-btn"
+                  (click)="signup(signupForm)"
+                  [disabled]="!email.valid || !password.valid || !confirm_password.valid"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+            <div *ngIf="page === 2">
+              <div class="form-field">
+                <label>PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  name="phone_number"
+                  #phone_number="ngModel"
+                  [ngModel]="phone_number.value | phonetransform"
+                  placeholder="### ###-####"
+                  required
+                  maxlength="12"
+                  pattern="[0-9]{3} [0-9]{3}-[0-9]{4}"
+                />
+                <small [hidden]="phone_number.valid || phone_number.untouched">
+                  Phone Number is Required.
+                </small>
+              </div>
+              <div class="form-field">
+                <label>COMPANY NAME</label>
+                <input
+                  type="text"
+                  name="companyname"
+                  #companyname="ngModel"
+                  ngModel
+                  placeholder="Company Name"
+                  required
+                />
+                <small [hidden]="companyname.valid || companyname.untouched">
+                  Company Name is Required.
+                </small>
+              </div>
+              <div class="form-field">
+                <label>COMPANY ADDRESS</label>
+                <input
+                  type="text"
+                  name="company_address"
+                  #company_address="ngModel"
+                  ngModel
+                  placeholder="Company Address"
+                  required
+                />
+                <small [hidden]="company_address.valid || company_address.untouched">
+                  Company Address is Required.
+                </small>
+              </div>
+              <div class="main-button-action mt-4">
+                <button
+                  class="btn blue-btn"
+                  (click)="signup(signupForm)"
+                  [disabled]="!phone_number.valid || !companyname.valid || !company_address.valid"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div class="forgotpassword mt-3">Already have an account? <a [routerLink]="['/login']">Sign In</a></div>
+          <div class="disclaimer mt-5">
+            By clicking “Get Started” I agree to HiredHelpr’s
+            <span>Terms of Service</span> and <span>Privacy Policy.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

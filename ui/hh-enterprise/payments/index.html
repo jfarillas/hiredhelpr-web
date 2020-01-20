@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Enterprise</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      href="../../vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="../../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../js/htmlinclude.js"></script>
+    <script src="../../js/issuecollector.js"></script>
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="../../shell/sidebar-enterprise.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="../../shell/header-enterprise.html"></div>
+
+        <div
+          class="container-fluid content-container animated animatedFadeInUp fadeInUp"
+        >
+          <div class="content-title">
+            <h1 class="">Payment Accounts</h1>
+          </div>
+
+          <div class="main-table">
+            <!--CREDIT CARDS-->
+            <div class="account-box">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="main-button">
+                    <button
+                      class="btn green-btn"
+                      data-toggle="modal"
+                      data-target="#addCreditCard"
+                    >
+                      Add Credit Cards
+                    </button>
+                  </div>
+                  <div class="cardlist-table">
+                    <div class="cardlist-title">
+                      <h4>Cards</h4>
+                    </div>
+                    <div class="cardlist-accordion">
+                      <div class="accnt-wrapper center-block">
+                        <div
+                          class="panel-group accnts-panel"
+                          id="accordion"
+                          role="tablist"
+                          aria-multiselectable="true"
+                        >
+                          <div class="panel panel-default">
+                            <div
+                              class="panel-heading active"
+                              role="tab"
+                              id="headingOne"
+                            >
+                              <h4 class="panel-title">
+                                <a
+                                  role="button"
+                                  data-toggle="collapse"
+                                  data-parent="#accordion"
+                                  href="#collapseOne"
+                                  aria-expanded="true"
+                                  aria-controls="collapseOne"
+                                >
+                                  <div class="accnt-inline-details">
+                                    <div class="inline-details">
+                                      <img src="../../images/visa-cc.png" />
+                                      <p>*********1033</p>
+                                      <p>2 / 2020</p>
+                                    </div>
+                                    <div class="inline-btn">
+                                      <!-- <button class="def-btn" disabled>Default</button> -->
+                                      <img
+                                        class="default-icon"
+                                        src="../../images/checkmark.png"
+                                      />
+                                      <button
+                                        class="edit-btn"
+                                        data-toggle="modal"
+                                        data-target="#editCreditCard"
+                                      >
+                                        Edit
+                                      </button>
+                                      <button
+                                        class="delete-btn"
+                                        data-toggle="modal"
+                                        data-target="#deleteCreditCard"
+                                      >
+                                        Delete
+                                      </button>
+                                    </div>
+                                  </div>
+                                </a>
+                              </h4>
+                            </div>
+                            <div
+                              id="collapseOne"
+                              class="panel-collapse collapse"
+                              role="tabpanel"
+                              aria-labelledby="headingOne"
+                            >
+                              <div class="panel-body accnt-fulldetails">
+                                <table class="table no-margins">
+                                  <tbody>
+                                    <tr>
+                                      <td>ID</td>
+                                      <td>
+                                        src_1EflkpLFjGrs2UxRFqgS8aL3
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Name</td>
+                                      <td>test13edited</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Number</td>
+                                      <td>********1033</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Expires</td>
+                                      <td>2 / 2021</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Type</td>
+                                      <td>Prepaid</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div
+                              class="panel-heading active"
+                              role="tab"
+                              id="headingTwo"
+                            >
+                              <h4 class="panel-title">
+                                <a
+                                  role="button"
+                                  data-toggle="collapse"
+                                  data-parent="#accordion"
+                                  href="#collapseTwo"
+                                  aria-expanded="true"
+                                  aria-controls="collapseTwo"
+                                >
+                                  <div class="accnt-inline-details">
+                                    <div class="inline-details">
+                                      <img src="../../images/visa-cc.png" />
+                                      <p>*********1033</p>
+                                      <p>2 / 2020</p>
+                                    </div>
+                                    <div class="inline-btn">
+                                      <button class="def-btn">
+                                        Make Default
+                                      </button>
+                                      <!-- <img class="default-icon" src="../../images/checkmark.png"> -->
+                                      <button
+                                        class="edit-btn"
+                                        data-toggle="modal"
+                                        data-target="#editCreditCard"
+                                      >
+                                        Edit
+                                      </button>
+                                      <button
+                                        class="delete-btn"
+                                        data-toggle="modal"
+                                        data-target="#deleteCreditCard"
+                                      >
+                                        Delete
+                                      </button>
+                                    </div>
+                                  </div>
+                                </a>
+                              </h4>
+                            </div>
+                            <div
+                              id="collapseTwo"
+                              class="panel-collapse collapse"
+                              role="tabpanel"
+                              aria-labelledby="headingTwo"
+                            >
+                              <div class="panel-body accnt-fulldetails">
+                                <table class="table no-margins">
+                                  <tbody>
+                                    <tr>
+                                      <td>ID</td>
+                                      <td>
+                                        src_1EflkpLFjGrs2UxRFqgS8aL3
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Name</td>
+                                      <td>test13edited</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Number</td>
+                                      <td>********1033</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Expires</td>
+                                      <td>2 / 2021</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Type</td>
+                                      <td>Prepaid</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--BANK ACCOUNTS-->
+            <div class="account-box">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="main-button">
+                    <button
+                      class="btn green-btn"
+                      data-toggle="modal"
+                      data-target="#addBankAccount"
+                    >
+                      Add Bank Account
+                    </button>
+                  </div>
+                  <div class="cardlist-table">
+                    <div class="cardlist-title">
+                      <h4>Bank Accounts</h4>
+                    </div>
+                    <div class="cardlist-accordion">
+                      <div class="accnt-wrapper center-block">
+                        <div
+                          class="panel-group accnts-panel"
+                          id="accordion"
+                          role="tablist"
+                          aria-multiselectable="true"
+                        >
+                          <div class="panel panel-default">
+                            <div
+                              class="panel-heading active"
+                              role="tab"
+                              id="headingThree"
+                            >
+                              <h4 class="panel-title">
+                                <a
+                                  role="button"
+                                  data-toggle="collapse"
+                                  data-parent="#accordion"
+                                  href="#collapseThree"
+                                  aria-expanded="true"
+                                  aria-controls="collapseThree"
+                                >
+                                  <div class="accnt-inline-details">
+                                    <div class="inline-details">
+                                      <img src="../../images/visa-cc.png" />
+                                      <p>*********1033</p>
+                                      <p>2 / 2020</p>
+                                    </div>
+                                    <div class="inline-btn">
+                                      <!-- <button class="def-btn" disabled>Default</button> -->
+                                      <img
+                                        class="default-icon"
+                                        src="../../images/checkmark.png"
+                                      />
+                                      <button
+                                        class="edit-btn"
+                                        data-toggle="modal"
+                                        data-target="#editCreditCard"
+                                      >
+                                        Edit
+                                      </button>
+                                      <button
+                                        class="delete-btn"
+                                        data-toggle="modal"
+                                        data-target="#deleteCreditCard"
+                                      >
+                                        Delete
+                                      </button>
+                                    </div>
+                                  </div>
+                                </a>
+                              </h4>
+                            </div>
+                            <div
+                              id="collapseThree"
+                              class="panel-collapse collapse"
+                              role="tabpanel"
+                              aria-labelledby="headingThree"
+                            >
+                              <div class="panel-body accnt-fulldetails">
+                                <table class="table no-margins">
+                                  <tbody>
+                                    <tr>
+                                      <td>ID</td>
+                                      <td>
+                                        src_1EflkpLFjGrs2UxRFqgS8aL3
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Name</td>
+                                      <td>test13edited</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Number</td>
+                                      <td>********1033</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Expires</td>
+                                      <td>2 / 2021</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Type</td>
+                                      <td>Prepaid</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--ADD CARD MODAL-->
+
+      <div
+        class="modal fade"
+        id="addCreditCard"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Card Details</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body payment-modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="payment-info">
+                    <h4>Payment Information</h4>
+                    <div class="col-md-12">
+                      <div class="form-field">
+                        <label>Name on Card</label>
+                        <input type="text" name="Name" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-field">
+                        <label>Email Address</label>
+                        <input type="email" name="Email" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-field">
+                        <label>Card Number</label>
+                        <input
+                          class="mb-10"
+                          type="text"
+                          name="CardNumber"
+                          placeholder="Enter your 16-digit card number here."
+                        />
+                        <div class="row">
+                          <div class="col-md-6 paddr-5">
+                            <input
+                              type="text"
+                              name="CardNumber"
+                              placeholder="MM / YY"
+                            />
+                          </div>
+                          <div class="col-md-6 paddl-5">
+                            <input
+                              type="text"
+                              name="CardNumber"
+                              placeholder="Security Code"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-icons">
+                        <img
+                          class="register-icon"
+                          src="../../images/certification-badge-bw.png"
+                        />
+                        <img
+                          class="stripe-icon"
+                          src="../../images/certification-badge-stripe.png"
+                        />
+                        <img
+                          class="cards-icon"
+                          src="../../images/cc-card-logo2.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 border-l">
+                  <div class="payment-info">
+                    <h4>Billing Address</h4>
+                    <div class="col-md-12">
+                      <div class="form-field">
+                        <label>Address 1</label>
+                        <input type="text" name="Address1" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-field">
+                        <label>Address 2</label>
+                        <input type="text" name="Address2" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-field">
+                        <label>City</label>
+                        <input type="text" name="City" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-field">
+                        <label>State</label>
+                        <select class="custom-select" id="">
+                          <option selected>Alaska</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-field">
+                        <div class="row">
+                          <div class="col-md-6 paddr-5">
+                            <label>Country</label>
+                            <select class="custom-select" id="i">
+                              <option selected>United States</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 paddl-5">
+                            <label>Zip Code</label>
+                            <input type="text" name="ZipCode" placeholder="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer main-modal-footer">
+              <button type="button" class="btn approved-btn">
+                Save Card
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--EDIT CARD MODAL-->
+      <div
+        class="modal fade"
+        id="editCreditCard"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Update Card Details
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body payment-modal-body">
+              <div class="payment-info">
+                <h4>Card Details</h4>
+                <div class="center-form">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="left-label">
+                        <label>Expire Date</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="right-input form-field">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <select class="custom-select" id="">
+                              <option selected>2</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col-md-2">
+                            <span class="date-divider">/</span>
+                          </div>
+                          <div class="col-md-5">
+                            <select class="custom-select" id="">
+                              <option selected>2021</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="left-label">
+                        <label>Cardholder Name</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="right-input form-field">
+                        <input type="test" name="test" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="left-label">
+                        <label>Email Address</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="right-input form-field">
+                        <input type="test" name="test" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="left-label">
+                        <label>Address 1</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="right-input form-field">
+                        <input type="test" name="test" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="left-label">
+                        <label>Address 2</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="right-input form-field">
+                        <input type="test" name="test" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="left-label">
+                        <label>City</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="right-input form-field">
+                        <input type="test" name="test" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="left-label">
+                        <label>Zip/Postal</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="right-input form-field">
+                        <input type="test" name="test" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="left-label">
+                        <label>State/Province</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="right-input form-field">
+                        <input type="test" name="test" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer main-modal-footer">
+              <button type="button" class="btn approved-btn">
+                Save Changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--DELETE MODAL-->
+
+      <div
+        class="modal fade"
+        id="deleteCreditCard"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Delete Source of Payment
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body payment-modal-body">
+              Are You Sure that You want to delete this payment Source?
+            </div>
+            <div class="modal-footer main-modal-footer">
+              <button type="button" class="btn approved-btn">
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--ADD BANK ACCOUNT MODAL-->
+
+      <div
+        class="modal fade"
+        id="addBankAccount"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Account Verification Transaction
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body payment-modal-body">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="payment-info">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="left-label">
+                          <label>Account Name</label>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="form-field">
+                          <input type="text" name="AccountName" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="left-label">
+                          <label>Account Type</label>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="form-field">
+                          <select class="custom-select" id="">
+                            <option selected>Individual</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <p class="accnt-reminder">
+                            <i
+                              >Bank account checkouts can take 1-2 days to
+                              complete. After entering your information here, we
+                              will email you further instructions. Transfers
+                              from bank accounts can take 3-5 days to
+                              process.</i
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="left-label">
+                          <label>Routing Number</label>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="form-field">
+                          <input
+                            class="mb-10"
+                            type="text"
+                            name="RoutingNumber"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="left-label">
+                          <label>Account Number</label>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="form-field">
+                          <input
+                            class="mb-10"
+                            type="text"
+                            name="AccountNumber"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="left-label">
+                          <label>Email</label>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="form-field">
+                          <input class="mb-10" type="text" name="Email" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-8">
+                        <div class="form-icons">
+                          <img
+                            class="register-icon"
+                            src="../../images/certification-badge-bw.png"
+                          />
+                          <img
+                            class="stripe-icon"
+                            src="../../images/certification-badge-stripe.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5 border-l">
+                  <div class="steps-line"></div>
+                  <div class="vertical-steps-wrapper">
+                    <div class="vertical-steps">
+                      <div class="steps-icon dblue">
+                        <span>1</span>
+                      </div>
+                      <div class="steps-txt">
+                        <p>Enter your bank account information.</p>
+                      </div>
+                    </div>
+                    <div class="vertical-steps">
+                      <div class="steps-icon lblue">
+                        <span>2</span>
+                      </div>
+                      <div class="steps-txt">
+                        <p>
+                          Wait for micro deposits to appear (2-3 business days).
+                        </p>
+                      </div>
+                    </div>
+                    <div class="vertical-steps">
+                      <div class="steps-icon lblue">
+                        <span>3</span>
+                      </div>
+                      <div class="steps-txt">
+                        <p>
+                          Enter your micro deposits to confirm your account.
+                        </p>
+                      </div>
+                    </div>
+                    <!--          <div class="steps-line"></div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer main-modal-footer">
+              <button type="button" class="btn approved-btn btn-width-lg">
+                Start Bank Verification
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      jQuery(document).ready(function($) {
+        $("*[data-href]").on("click", function() {
+          window.location = $(this).data("href");
+        });
+      });
+      includeHTML();
+      $(".panel-collapse").on("show.bs.collapse", function() {
+        $(this)
+          .siblings(".panel-heading")
+          .addClass("active");
+      });
+
+      $(".panel-collapse").on("hide.bs.collapse", function() {
+        $(this)
+          .siblings(".panel-heading")
+          .removeClass("active");
+      });
+    </script>
+  </body>
+</html>

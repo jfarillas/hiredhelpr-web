@@ -1,0 +1,114 @@
+{
+  "configVersion": 1,
+  "timestamp": 1579126557097,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main-es2015.87a57441643cb8927219.js",
+        "/main-es5.586f601e5cf41d4ba97e.js",
+        "/manifest.json",
+        "/polyfills-es2015.3a5912fab8c77316ecf4.js",
+        "/polyfills-es5.6f55275bcaafee4ab683.js",
+        "/runtime-es2015.ca84bb782683800d794b.js",
+        "/runtime-es5.8f24ffed1c06a6510470.js",
+        "/scripts.c825ff6308a5e47d9f2d.js",
+        "/styles.084df1742f9ef9c8a2b7.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/arrow-forward.svg",
+        "/assets/avatar.jpg",
+        "/assets/ngx-rocket-logo.png",
+        "/assets/ngx-rocket-logo@192.png",
+        "/assets/tab1.jpg",
+        "/assets/tab2.jpg",
+        "/assets/tab3.jpg",
+        "/assets/tab4.jpg",
+        "/assets/tab5.jpg",
+        "/fa-brands-400.06147b6cd88c7346cecd.ttf",
+        "/fa-brands-400.5063b105c7646c8043d5.eot",
+        "/fa-brands-400.c5e0f14f88a828261ba0.woff",
+        "/fa-brands-400.cccc9d29470e879e40eb.woff2",
+        "/fa-regular-400.65b286af947c0d982ca0.ttf",
+        "/fa-regular-400.c1a866ec0e04a5e1915b.eot",
+        "/fa-regular-400.c4f508e7c4f01a9eeba7.woff",
+        "/fa-regular-400.f5f2566b93e89391da4d.woff2",
+        "/fa-solid-900.0bff33a5fd7ec3902354.ttf",
+        "/fa-solid-900.333bae208dc363746961.woff",
+        "/fa-solid-900.44d537ab79f921fde5a2.woff2",
+        "/fa-solid-900.8e4a6dcc692b3887f9f5.eot",
+        "/slick.b7c9e1e479de3b53f1e4.woff",
+        "/slick.ced611daf7709cc778da.eot",
+        "/slick.d41f55a78e6f49a55128.ttf"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/arrow-forward.svg": "4b5fb2129c054df318b77f68e08d115aa8db246c",
+    "/assets/avatar.jpg": "f24596bbe0333780aad273bb9e9b1edd966250e7",
+    "/assets/ngx-rocket-logo.png": "0ac53fd27406fe5a36e68285315fb0012e54058e",
+    "/assets/ngx-rocket-logo@192.png": "461b730f9c6dc818f8af9acbe62dfde24dc02d7a",
+    "/assets/tab1.jpg": "1da2352704a9f26d36dc32f471ca7d552f9070b8",
+    "/assets/tab2.jpg": "65085cc5ce2edee9bea7bc4ba7c4d4fa0e3508ac",
+    "/assets/tab3.jpg": "fda3081c53b0c4010d71a355e6c3fe0017d7b70d",
+    "/assets/tab4.jpg": "0fbce4616580a37b73dd4951e551d9807cc3597c",
+    "/assets/tab5.jpg": "809c6fb9f168450989813f27dff0a192a2c980b3",
+    "/fa-brands-400.06147b6cd88c7346cecd.ttf": "c5a1a93f668d15f55deac38b4728f8d901bd4748",
+    "/fa-brands-400.5063b105c7646c8043d5.eot": "7ed86fe71d4dc31d5edf492f7472d6fb88c3c3c9",
+    "/fa-brands-400.c5e0f14f88a828261ba0.woff": "6900998c1d878e73b2f9ac3a9a9746365d49a54f",
+    "/fa-brands-400.cccc9d29470e879e40eb.woff2": "5fe986cda635681b4b6bbd6111df2f26d7fca286",
+    "/fa-regular-400.65b286af947c0d982ca0.ttf": "5d5375ce3ae5b500df039da009ccdaca29d52fc0",
+    "/fa-regular-400.c1a866ec0e04a5e1915b.eot": "1115185386ada5846eecc4e2e1f076ca7617e0cd",
+    "/fa-regular-400.c4f508e7c4f01a9eeba7.woff": "7626840dab0e2ae37b2d16572a6f183a71a0dd73",
+    "/fa-regular-400.f5f2566b93e89391da4d.woff2": "be142af0f56062f6e864de121b98054c7b5954fd",
+    "/fa-solid-900.0bff33a5fd7ec3902354.ttf": "40d9789010f6137e543e4d97025b867707d2f425",
+    "/fa-solid-900.333bae208dc363746961.woff": "43dae5c2482bfb5d04d896529600eb621181103a",
+    "/fa-solid-900.44d537ab79f921fde5a2.woff2": "b2879f9e1d0985a96842bf7f55a2b2cc4c636d04",
+    "/fa-solid-900.8e4a6dcc692b3887f9f5.eot": "340ee70e87850176047733192ea8109dd6380082",
+    "/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
+    "/index.html": "db75d9883256ea569d11fb58956406db3e6424fe",
+    "/main-es2015.87a57441643cb8927219.js": "2429337c0445b9b5a9e3a345a50eb2fbef971230",
+    "/main-es5.586f601e5cf41d4ba97e.js": "b0e4a8d29d626f9bc561c9fc12aa03385383efe2",
+    "/manifest.json": "f54ed5c1c5dcee2cedff4fbd6675f7b94922623d",
+    "/polyfills-es2015.3a5912fab8c77316ecf4.js": "ffe5f8cfa6eae51a7a95e8363b303b0c44ade852",
+    "/polyfills-es5.6f55275bcaafee4ab683.js": "3ea1e29746459f5b3ea1cf720189326d06127910",
+    "/runtime-es2015.ca84bb782683800d794b.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/runtime-es5.8f24ffed1c06a6510470.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/scripts.c825ff6308a5e47d9f2d.js": "dd27280fa86a56bfebeed212635d68d7e080a34b",
+    "/slick.b7c9e1e479de3b53f1e4.woff": "af91c12f0f406a4f801aeb3b398768fe41d8f864",
+    "/slick.ced611daf7709cc778da.eot": "2dff0768f4c0a53228761eab917e2c65556042d4",
+    "/slick.d41f55a78e6f49a55128.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575",
+    "/styles.084df1742f9ef9c8a2b7.css": "108c42cb6b78b9f85c375397bb843ed414b8f5a7"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

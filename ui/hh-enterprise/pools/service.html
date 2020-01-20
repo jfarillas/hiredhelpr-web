@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Enterprise</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      href="../../vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="../../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../js/htmlinclude.js"></script>
+    <script src="../../js/issuecollector.js"></script>
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="../../shell/sidebar-enterprise.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="../../shell/header-enterprise.html"></div>
+
+        <div class="container-fluid content-container">
+          <div class="content-title">
+            <h1 class="">
+              Service No. <span>00025</span> (<span>04/07/2019</span>)
+            </h1>
+            <div class="message-button">
+              <button class="btn">Message Us</button>
+            </div>
+          </div>
+
+          <div class="main-gridbox">
+            <div class="row">
+              <div class="col">
+                <p class="gridbox-title">Address on Home</p>
+                <button
+                  class="btn"
+                  data-toggle="modal"
+                  data-target="#exampleModal1"
+                >
+                  View Photo
+                </button>
+              </div>
+              <div class="col">
+                <p class="gridbox-title">Fence Around Pool</p>
+                <div class="per-issue">
+                  <p>
+                    Is there a fence around the pool/backyard:
+                    <strong>Yes</strong>
+                  </p>
+                  <button class="btn">View Photo</button>
+                </div>
+                <div class="per-issue">
+                  <p>
+                    Is the gate able to close and lock? <strong>Yes</strong>
+                  </p>
+                  <button class="btn">View Photo</button>
+                </div>
+              </div>
+              <div class="col">
+                <p class="gridbox-title">Picture of Pool Before</p>
+                <div class="per-issue">
+                  <button class="btn">View Photo</button>
+                </div>
+              </div>
+              <div class="col">
+                <p class="gridbox-title">Test and add chemicals</p>
+                <div class="per-issue">
+                  <button class="btn">View Photo</button>
+                </div>
+              </div>
+              <div class="col">
+                <p class="gridbox-title">Picture of Pool After Cleaning</p>
+                <div class="per-issue">
+                  <button class="btn">View Photo</button>
+                </div>
+              </div>
+              <div class="col">
+                <p class="gridbox-title">Miscellaneous Issues</p>
+                <div class="per-issue">
+                  <button class="btn">Go to Maintenance</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--container-fluid-->
+
+        <div class="container-fluid content-container no-pt">
+          <div class="content-title">
+            <h1 class="">
+              Message History
+            </h1>
+          </div>
+
+          <div class="msg-history-box bg-light">
+            <div class="table-title">
+              <h4>Your messaging history can be viewed below!</h4>
+            </div>
+            <div class="msg-thread">
+              <div class="right-msg">
+                <p class="msg-name">John Appleseed</p>
+                <p class="msg-text">The picture after the cleaning is green.</p>
+                <p class="msg-date">04/8/2019 10:00 Am</p>
+              </div>
+
+              <div class="left-msg">
+                <p class="msg-name">Connor Pfister</p>
+                <p class="msg-text">
+                  The timer was completely broken, so it needs to be fully
+                  replaced.
+                </p>
+                <p class="msg-date">04/11/2019 10:05 Am</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--container-fluid-->
+      </div>
+      <!-- /#page-content-wrapper -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal1"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body no-padding">
+              <div
+                class="full-photo"
+                style="background-image: url(../../images/tab1.jpg);"
+              ></div>
+            </div>
+            <div class="modal-footer main-modal-footer">
+              <button type="button" class="btn approved-btn">
+                Approved
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      includeHTML();
+    </script>
+  </body>
+</html>

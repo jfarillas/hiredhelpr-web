@@ -1,0 +1,8 @@
+#Exclude Frontend depedencies
+/api/frontend/node_modules/
+
+#Exclude Backend depedencies
+/api/vendor/
+
+#Exclude ssh keys
+/.ssh

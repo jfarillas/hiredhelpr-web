@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Admin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../js/htmlinclude.js"></script>
+    <style type="text/css"></style>
+    <script type="text/javascript">
+      jQuery.ajax({
+        url:
+          "https://jira.tiburondata.com/s/510de82fe11f8debf09626f25eb837bb-T/en_USp0g9dl/64022/167/1.4.26/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-US&collectorId=8bd60590",
+        type: "get",
+        cache: true,
+        dataType: "script"
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="../shell/sidebar.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="../shell/header.html"></div>
+
+        <div class="container-fluid content-container">
+          <div class="content-title">
+            <h1 class="">1234 Austin Drive, Austin TX 77001</h1>
+          </div>
+          <div class="main-table">
+            <div class="table-title">
+              <div class="pool-owner">
+                <div class="row">
+                  <div class="col left">Homeowner: <span>Martha S.</span></div>
+                  <div class="col center">Phone: <span>123-456-7890</span></div>
+                  <div class="col right">
+                    Status: <span class="status-txt">Active</span>
+                  </div>
+                </div>
+              </div>
+              <table class="table">
+                <tbody class="main-tbody">
+                  <tr
+                    class="clickable-row"
+                    data-href="service-inspection-list.html"
+                  >
+                    <td>Inspection</td>
+                    <td class="pull-right arrow-box">
+                      <img
+                        class="forward-arrow"
+                        src="../images/arrow-forward.svg"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="clickable-row"
+                    data-href="service-maintenance-list.html"
+                  >
+                    <td>Maintenance</td>
+                    <td class="pull-right arrow-box">
+                      <img
+                        class="forward-arrow"
+                        src="../images/arrow-forward.svg"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="clickable-row"
+                    data-href="service-cleaning-list.html"
+                  >
+                    <td>Cleaning</td>
+                    <td class="pull-right arrow-box">
+                      <img
+                        class="forward-arrow"
+                        src="../images/arrow-forward.svg"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      jQuery(document).ready(function($) {
+        $("*[data-href]").on("click", function() {
+          window.location = $(this).data("href");
+        });
+      });
+      includeHTML();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+.content-container {
+  padding: 3rem 2rem;
+  background: #f8f8f8;
+}
+
+.content-title h1 {
+  font-size: 24px;
+  line-height: 35px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.message-button {
+  display: initial;
+  float: right;
+}
+
+.message-button button {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background: #0057c1;
+  padding: 7px 35px;
+  border-radius: 4px;
+}
+
+.main-table {
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px #f5f5f5;
+}
+
+.table-title h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+table .main-thead th {
+  padding: 1.2rem 0.5rem;
+  border-bottom: 2px solid #eee;
+  border-top: 0;
+}
+
+table .main-thead th:first-child {
+  padding-left: 1.5rem;
+}
+
+table .main-thead th:last-child {
+  padding-right: 1.5rem;
+}
+
+td.table-issue-width {
+  width: 200px;
+}
+
+.modal-btn.accept button {
+  background: #0eba58;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 10px;
+  width: 150px;
+  text-decoration: none;
+}
+
+.modal-btn.powerison button {
+  background: #ffffff;
+  border: 1px solid #0057c1;
+  color: #0057c1;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 10px;
+  width: 150px;
+  text-decoration: none;
+}
+
+.tr-row2 td {
+  border: 0;
+  padding-top: 0;
+  font-size: 13px;
+  vertical-align: top;
+}
+
+tr.tr-row2 p {
+  margin: 0;
+}
+
+.issue-fix-img {
+  width: 70px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.myCustomSizeModalClass .modal-dialog {
+  max-width: 565px !important; // Get the md actual size
+}

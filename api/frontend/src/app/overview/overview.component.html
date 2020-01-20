@@ -1,0 +1,101 @@
+<div class="container-fluid content-container">
+  <div class="content-title">
+    <h1 class="">Overview (Week of <span>00/00/00</span>)</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <a [routerLink]="['jobs-approved']">
+        <div class="row overview-box pt-4">
+          <div class="overview-boxicon col-md-4">
+            <div class="oval"></div>
+          </div>
+          <div class="overview-boxtext col-md-8">
+            <h1>0</h1>
+            <h2>Jobs Approved</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a [routerLink]="['jobs-approved']">
+        <div class="row overview-box pt-4">
+          <div class="overview-boxicon col-md-4">
+            <div class="oval"></div>
+          </div>
+          <div class="overview-boxtext col-md-8">
+            <h1>9</h1>
+            <h2>JOBS COMPLETED NEEDING APPROVAL</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a [routerLink]="['jobs-pending']">
+        <div class="row overview-box pt-4">
+          <div class="overview-boxicon col-md-4">
+            <div class="oval"></div>
+          </div>
+          <div class="overview-boxtext col-md-8">
+            <h1>0</h1>
+            <h2>Pending Jobs</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <a [routerLink]="['/maintenance']">
+        <div class="row overview-box pt-4">
+          <div class="overview-boxicon col-md-4">
+            <div class="oval"></div>
+          </div>
+          <div class="overview-boxtext col-md-8">
+            <h1>9</h1>
+            <h2>Pool Needing Maintenance</h2>
+          </div>
+        </div>
+      </a>
+      <a [routerLink]="['issues-cleaning']">
+        <div class="row overview-box pt-4">
+          <div class="overview-boxicon col-md-4">
+            <div class="oval"></div>
+          </div>
+          <div class="overview-boxtext col-md-8">
+            <h1>9</h1>
+            <h2>Issues with cleaning</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-8">
+      <div class="overview-box full">
+        <div class="overview-boxicon header-title-box">
+          <h3>Issue with Cleaning</h3>
+        </div>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>
+                4321 Bobby Lane, Austin TX 77001 -
+                <span class="warning">On Hold - maintenance bid needs approval</span>
+              </td>
+              <td class="pull-right">
+                <a class="link" href="#">Resolve issue</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                4321 Bobby Lane, Austin TX 77001 -
+                <span class="warning">Power is off - please turn on the power.</span>
+              </td>
+              <td class="pull-right">
+                <a class="link" href="#">Resolve issue</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

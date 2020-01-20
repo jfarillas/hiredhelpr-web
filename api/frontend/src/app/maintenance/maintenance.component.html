@@ -1,0 +1,37 @@
+<div class="container-fluid content-container">
+  <div class="content-title">
+    <h1 class="">Maintenance</h1>
+    <div class="page-search">
+      <input type="search" name="search" placeholder="Search by address..." />
+    </div>
+  </div>
+  <div class="main-table">
+    <div class="table-title">
+      <h4>
+        Here are all the pools with issues!
+      </h4>
+    </div>
+    <table class="table">
+      <tbody class="main-tbody">
+        <tr (click)="gotoIssue(9)">
+          <td>1234 Austin Drive, Austin TX 77001</td>
+          <td class="pull-right arrow-box">
+            <img class="forward-arrow" src="assets/arrow-forward.svg" />
+          </td>
+        </tr>
+        <tr class="clickable-row" data-href="maintenance-issue.html">
+          <td>1234 Austin Drive, Austin TX 77001</td>
+          <td class="pull-right arrow-box">
+            <img class="forward-arrow" src="assets/arrow-forward.svg" />
+          </td>
+        </tr>
+        <tr class="clickable-row" data-href="maintenance-issue.html">
+          <td>1234 Austin Drive, Austin TX 77001</td>
+          <td class="pull-right arrow-box">
+            <img class="forward-arrow" src="assets/arrow-forward.svg" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

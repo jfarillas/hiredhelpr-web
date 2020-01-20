@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Enterprise</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/htmlinclude.js"></script>
+    <style type="text/css">
+      .forward-arrow {
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="../shell/sidebar.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="../shell/header.html"></div>
+
+        <div
+          class="container-fluid content-container animated animatedFadeInUp fadeInUp"
+        >
+          <div class="content-title">
+            <h1 class="">Jobs Approved (<span>00</span>)</h1>
+            <div class="page-search">
+              <input
+                type="search"
+                name="search"
+                placeholder="Search by address..."
+              />
+            </div>
+          </div>
+
+          <div class="main-table">
+            <div class="table-title">
+              <h4>Listed below are the jobs you have approved this week</h4>
+
+              <table class="table">
+                <thead class="main-thead">
+                  <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Approved</th>
+                    <th scope="col">Date of Service</th>
+                    <th scope="col">Photos</th>
+                    <th scope="col">
+                      <div class="table-dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          id="dropdownMenu2"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Service Type
+                        </button>
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenu2"
+                        >
+                          <button class="dropdown-item" type="button">
+                            Inspect
+                          </button>
+                          <button class="dropdown-item" type="button">
+                            Cleaning
+                          </button>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="main-tbody">
+                  <tr>
+                    <td>00021</td>
+                    <td>1234 Austin Drive, Austin TX 77001</td>
+                    <td>00/00/0000</td>
+                    <td>00/00/0000</td>
+                    <td class="modal-btn">
+                      <button
+                        type="button"
+                        class="btn"
+                        data-toggle="modal"
+                        data-target="#exampleModal1"
+                      >
+                        View
+                      </button>
+                    </td>
+                    <td>Inspect</td>
+                  </tr>
+                  <tr>
+                    <td>00025</td>
+                    <td>4321 Bobby Lane, Austin TX 77001</td>
+                    <td>00/00/0000</td>
+                    <td>00/00/0000</td>
+                    <td class="modal-btn">
+                      <button
+                        type="button"
+                        class="btn"
+                        data-toggle="modal"
+                        data-target="#exampleModal2"
+                      >
+                        View
+                      </button>
+                    </td>
+                    <td>Cleaning</td>
+                  </tr>
+                  <tr>
+                    <td>00026</td>
+                    <td>5678 Longand Blvd, Austin TX 77001</td>
+                    <td>00/00/0000</td>
+                    <td>00/00/0000</td>
+                    <td class="modal-btn">
+                      <button
+                        type="button"
+                        class="btn"
+                        data-toggle="modal"
+                        data-target="#exampleModal3"
+                      >
+                        View
+                      </button>
+                    </td>
+                    <td>Cleaning</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal1"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                1234 Austin Drive, Austin TX 77001
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body main-modalbody">
+              <div class="row">
+                <div class="col-md-6 no-padding">
+                  <div class="modal-tab-btn" id="modaltabbtn">
+                    <button class="btn1 tab-btn active">
+                      Address on the Home
+                    </button>
+                    <button class="btn2 tab-btn">Fence Around The Pool</button>
+                    <button class="btn3 tab-btn">
+                      Pool Before the Cleaning
+                    </button>
+                    <button class="btn4 tab-btn">
+                      Pool after the cleaning
+                    </button>
+                    <button class="btn5 tab-btn">Test and Add Chemicals</button>
+                  </div>
+                </div>
+                <div class="col-md-6 no-padding">
+                  <div class="modal-img"></div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer main-modal-footer"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      includeHTML();
+
+      $(".tab-btn").click(function() {
+        $(this)
+          .addClass("active")
+          .siblings()
+          .removeClass("active");
+      });
+
+      jQuery(document).ready(function($) {
+        $(".btn1").on({
+          click: function() {
+            $(".modal-img").css("background-image", "url(../images/tab1.jpg)");
+          }
+        });
+        $(".btn2").on({
+          click: function() {
+            $(".modal-img").css("background-image", "url(../images/tab2.jpg)");
+          }
+        });
+        $(".btn3").on({
+          click: function() {
+            $(".modal-img").css("background-image", "url(../images/tab3.jpg)");
+          }
+        });
+        $(".btn4").on({
+          click: function() {
+            $(".modal-img").css("background-image", "url(../images/tab4.jpg)");
+          }
+        });
+        $(".btn5").on({
+          click: function() {
+            $(".modal-img").css("background-image", "url(../images/tab5.jpg)");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

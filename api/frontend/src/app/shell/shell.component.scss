@@ -1,0 +1,41 @@
+/* Global Scope Styles */
+
+/* Base template */
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+@import "./sidebar/sidebar.component.scss";
+@import "../overview/overview.component.scss";
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+/*RESPONSIVE*/
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+    background: #f8f8f8;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}

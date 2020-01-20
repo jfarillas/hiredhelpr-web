@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Enterprise</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      href="../../vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="../../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../js/htmlinclude.js"></script>
+    <script src="../../js/issuecollector.js"></script>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="../../shell/sidebar-enterprise.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="../../shell/header-enterprise.html"></div>
+
+        <div class="container-fluid content-container">
+          <div class="content-title">
+            <h1 class="">Maintenance No. 00024 (<span>04/11/2019</span>)</h1>
+            <div class="message-button">
+              <button class="btn">Message Us</button>
+            </div>
+          </div>
+
+          <div class="main-table">
+            <div class="table-title">
+              <table class="table">
+                <thead class="main-thead">
+                  <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Issue</th>
+                    <th scope="col">Action</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">Date Submitted</th>
+                    <th scope="col">Next Steps</th>
+                    <th scope="col">Approved</th>
+                    <th scope="col">Fixed?</th>
+                    <th scope="col">Fixed Date</th>
+                  </tr>
+                </thead>
+                <tbody class="main-tbody">
+                  <tr>
+                    <td>00025</td>
+                    <td class="table-issue-width">Electrical Timer Box</td>
+                    <td>Replace</td>
+                    <td>$150</td>
+                    <td>00/00/0000</td>
+                    <td>None</td>
+                    <td>00/00/0000</td>
+                    <td class="green-txt">Yes</td>
+                    <td>00/00/0000</td>
+                  </tr>
+                  <tr class="tr-row2">
+                    <td>
+                      <p>Issue:</p>
+                      <div
+                        class="issue-fix-img"
+                        style="background-image: url(../../images/tab1.jpg);"
+                      ></div>
+                    </td>
+                    <td>
+                      <p>Fix:</p>
+                      <div
+                        class="issue-fix-img"
+                        style="background-image: url(../../images/tab2.jpg);"
+                      ></div>
+                    </td>
+                    <td colspan="7">
+                      <p>Description:</p>
+                      <p>Timer box was malfunctioning. It is broken.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>00025</td>
+                    <td class="table-issue-width">Power is off</td>
+                    <td>Turn on</td>
+                    <td>$50</td>
+                    <td>00/00/0000</td>
+                    <td>None</td>
+                    <td>--</td>
+                    <td class="green-txt">Yes</td>
+                    <td>--</td>
+                  </tr>
+                  <tr class="tr-row2">
+                    <td></td>
+                    <td></td>
+                    <td colspan="7">
+                      <p>Description:</p>
+                      <p>
+                        The power is off so the inspection could not be
+                        completed. A $50 penalty fee has been charged to your
+                        account. Please turn power on and then click the button
+                        above to continue servicing. - HiredHelpr staff
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid content-container no-pt">
+          <div class="content-title">
+            <h1 class="">
+              Message History
+            </h1>
+          </div>
+
+          <div class="msg-history-box bg-light">
+            <div class="table-title">
+              <h4>Your messaging history can be viewed below!</h4>
+            </div>
+            <div class="msg-thread">
+              <div class="right-msg">
+                <p class="msg-name">John Appleseed</p>
+                <p class="msg-text">The picture after the cleaning is green.</p>
+                <p class="msg-date">04/8/2019 10:00 Am</p>
+              </div>
+              <div class="left-msg">
+                <p class="msg-name">Connor Pfister</p>
+                <p class="msg-text">
+                  The timer was completely broken, so it needs to be fully
+                  replaced.
+                </p>
+                <p class="msg-date">04/11/2019 10:05 Am</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--container-fluid-->
+      </div>
+      <!-- /#page-content-wrapper -->
+      <!-- Button trigger modal -->
+
+      <!-- ACCEPT Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Do you accept the cost to fix the issue?
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <table class="table">
+                <thead class="issue-modal">
+                  <td>Issue:</td>
+                  <td>Cost:</td>
+                </thead>
+                <tbody class="issue-modal">
+                  <tr>
+                    <td>Electrical Timer Box</td>
+                    <td><strong>$150</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table">
+                <thead class="issue-modal">
+                  <td>Description:</td>
+                </thead>
+                <tbody class="issue-modal">
+                  <tr>
+                    <td>Timer box was manfunctioning. It is broken.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="modal-footer main-modal-footer">
+              <button type="button" class="btn approved-btn">
+                Accept!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POWER IS ON Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Is the power on?
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <table class="table">
+                <thead class="issue-modal">
+                  <td>Disclaimer:</td>
+                </thead>
+                <tbody class="issue-modal">
+                  <tr>
+                    <td>
+                      If the power is back on, click yes and we will resume the
+                      inspection.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="modal-footer main-modal-footer">
+              <button type="button" class="btn approved-btn">
+                Yes!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      includeHTML();
+    </script>
+  </body>
+</html>

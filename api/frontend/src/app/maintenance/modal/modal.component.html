@@ -1,0 +1,46 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">
+      Do you accept the cost to fix the issue?
+    </h5>
+    <button
+      type="button"
+      class="close"
+      data-dismiss="modal"
+      aria-label="Close"
+      (click)="activeModal.dismiss('Cross click')"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <table class="table">
+      <thead class="issue-modal">
+        <td>Issue:</td>
+        <td>Cost:</td>
+      </thead>
+      <tbody class="issue-modal">
+        <tr>
+          <td>Electrical Timer Box</td>
+          <td><strong>$150</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table">
+      <thead class="issue-modal">
+        <td>Description:</td>
+      </thead>
+      <tbody class="issue-modal">
+        <tr>
+          <td>Timer box was manfunctioning. It is broken.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="modal-footer main-modal-footer">
+    <button type="button" class="btn approved-btn">
+      Accept!
+    </button>
+  </div>
+</div>

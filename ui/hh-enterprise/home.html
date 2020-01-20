@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Enterprise</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/htmlinclude.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/issuecollector.js"></script>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="/hh-enterprise/shell/sidebar.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="/hh-enterprise/shell/header.html"></div>
+
+        <div
+          class="container-fluid content-container animated animatedFadeInUp fadeInUp"
+        >
+          <div class="content-title">
+            <h1 class="">Overview (Week of <span>00/00/00</span>)</h1>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="overview/jobs-approved.html">
+                <div class="row overview-box pt-4">
+                  <div class="overview-boxicon col-md-4">
+                    <img class="oval" src="../images/jobs-approved.svg" />
+                  </div>
+                  <div class="overview-boxtext col-md-8">
+                    <h1>0</h1>
+                    <h2>Jobs Approved</h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a href="overview/jobs-completed.html">
+                <div class="row overview-box pt-4">
+                  <div class="overview-boxicon col-md-4">
+                    <img class="oval" src="../images/jobs-completed.svg" />
+                  </div>
+                  <div class="overview-boxtext col-md-8">
+                    <h1>9</h1>
+                    <h2>JOBS COMPLETED NEEDING APPROVAL</h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a href="overview/pending-jobs.html">
+                <div class="row overview-box pt-4">
+                  <div class="overview-boxicon col-md-4">
+                    <img class="oval" src="../images/pending-jobs.svg" />
+                  </div>
+                  <div class="overview-boxtext col-md-8">
+                    <h1>0</h1>
+                    <h2>Pending Jobs</h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="maintenance">
+                <div class="row overview-box pt-4">
+                  <div class="overview-boxicon col-md-4">
+                    <img class="oval" src="../images/pools.svg" />
+                  </div>
+                  <div class="overview-boxtext col-md-8">
+                    <h1>9</h1>
+                    <h2>Pool Needing Maintenance</h2>
+                  </div>
+                </div>
+              </a>
+              <a href="overview/issue.html">
+                <div class="row overview-box pt-4">
+                  <div class="overview-boxicon col-md-4">
+                    <img class="oval" src="../images/issue.png" />
+                  </div>
+                  <div class="overview-boxtext col-md-8">
+                    <h1>9</h1>
+                    <h2>Issues with cleaning</h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-8">
+              <div class="overview-box full">
+                <div class="overview-boxicon header-title-box">
+                  <h3>Issue with Cleaning</h3>
+                </div>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        4321 Bobby Lane, Austin TX 77001 -
+                        <span class="warning"
+                          >On Hold - maintenance bid needs approval</span
+                        >
+                      </td>
+                      <td class="pull-right resolve-issue-btn">
+                        <a
+                          class="link"
+                          href="maintenance/maintenance-issue.html"
+                        />Resolve issue
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        4321 Bobby Lane, Austin TX 77001 -
+                        <span class="warning"
+                          >Power is off - please turn on the power.</span
+                        >
+                      </td>
+                      <td class="pull-right resolve-issue-btn">
+                        <a
+                          class="link"
+                          href="maintenance/maintenance-issue.html"
+                        />Resolve issue
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Menu Toggle Script -->
+    <script type="text/javascript">
+      includeHTML();
+      $(document).ready(function() {
+        $(window).on("load", function() {
+          $("#notif-btn").click(function(event) {
+            event.stopPropagation();
+            $("#notification-box").slideToggle("fast");
+          });
+
+          $(document).on("click", function() {
+            $("#notification-box").hide();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #9b9b9b;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+a.link {
+  color: #0057c1;
+}
+
+.content-title h1 {
+  font-size: 24px;
+  line-height: 35px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.content-container {
+  padding: 3rem;
+  background: #f8f8f8;
+}
+
+.message-button {
+  display: initial;
+  float: right;
+}
+
+.message-button button {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background: #0057c1;
+  padding: 7px 35px;
+  border-radius: 4px;
+}
+
+.main-gridbox .row {
+  margin: 0;
+  height: 100%;
+  min-height: 200px;
+}
+
+.main-gridbox {
+  border: 2px solid #eee;
+  font-size: 12px;
+  background: #fff;
+}
+
+.main-gridbox .col {
+  box-sizing: border-box;
+  border-right: 2px solid #eee;
+  padding: 10px;
+}
+
+.main-gridbox p {
+  margin-bottom: 0;
+}
+
+.main-gridbox .gridbox-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-gridbox button {
+  font-size: 12px;
+  padding: 0;
+  text-decoration: underline;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.placeholder-midtxt {
+  display: flex;
+}
+
+.placeholder-midtxt h4 {
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.table-title h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+.msg-thread {
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.right-msg {
+  text-align: right;
+  margin-bottom: 1rem;
+  width: 70%;
+  margin-left: auto;
+}
+
+.right-msg p {
+  margin-bottom: 5px;
+}
+
+.right-msg .msg-name {
+  color: #0057c1;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.right-msg .msg-date {
+  color: #9b9b9b;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.left-msg {
+  text-align: left;
+  margin-bottom: 1rem;
+  width: 70%;
+  margin-right: auto;
+}
+
+.left-msg p {
+  margin-bottom: 5px;
+}
+
+.left-msg .msg-name {
+  color: #0eba58;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.left-msg .msg-date {
+  color: #9b9b9b;
+  font-size: 12px;
+  text-transform: uppercase;
+}

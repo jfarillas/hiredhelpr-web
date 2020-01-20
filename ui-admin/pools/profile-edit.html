@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Admin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/htmlinclude.js"></script>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="../shell/sidebar.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="../shell/header.html"></div>
+
+        <div class="container-fluid content-container">
+          <div class="content-title">
+            <h1 class="">Pools of America</h1>
+            <div id="msg-button" class="main-button">
+              <a href="profile.html">
+                <button class="btn green-btn">Save</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="main-table">
+            <div class="profile-wrapper">
+              <div class="row">
+                <div class="col-md-6 profile-col">
+                  <div class="main-form">
+                    <label>FULL NAME</label>
+                    <input type="text" name="name" value="Bobby Marcus" />
+                  </div>
+                </div>
+                <div class="col-md-6 profile-col">
+                  <div class="main-form ">
+                    <label>PHONE NUMBER (Primary Contact)</label>
+                    <input
+                      type="text"
+                      name="phonenumber"
+                      value="234-343-5687"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 profile-col">
+                  <div class="main-form">
+                    <label>DOB</label>
+                    <input type="text" name="dob" value="12/12/68" />
+                  </div>
+                </div>
+                <div class="col-md-6 profile-col">
+                  <div class="main-form ">
+                    <label>WORK EMAIL ADDRESS</label>
+                    <input
+                      type="text"
+                      name="email"
+                      value="bobby.marcus@poolsofamerica.com"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 profile-col">
+                  <div class="main-form">
+                    <label>COMPANY ADDRESS</label>
+                    <input
+                      type="text"
+                      name="companyaddress"
+                      value="12432 Big Road, Austin TX 77001"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 profile-col">
+                  <div class="main-form ">
+                    <label>COMPANY NAME</label>
+                    <input
+                      type="text"
+                      name="companyname"
+                      value="Pools of America"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-12 profile-col">
+                  <p class="service-radius-title">SERVICE RADIUS</p>
+                </div>
+                <div class="col-md-6 profile-col">
+                  <div class="main-form">
+                    <label>ENTER CITY</label>
+                    <!-- <input type="text" name="companyname" value="City" /> -->
+
+                    <select class="custom-select" id="">
+                      <option selected>Select City</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="city-selected-box">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="city-selected bg-light">
+                          <p>Austin, TX</p>
+                          <span><img src="../images/remove-city.png"/></span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="city-selected bg-light">
+                          <p>Next, TX</p>
+                          <span><img src="../images/remove-city.png"/></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      includeHTML();
+
+      //CHAT BOX//
+      $("#live-chat header").on("click", function() {
+        $(".chat").slideToggle(300, "swing");
+        $(".chat-message-counter").fadeToggle(300, "swing");
+      });
+      $(".chat-close").on("click", function(e) {
+        e.preventDefault();
+        $("#live-chat").fadeOut(300);
+      });
+      $(document).ready(function() {
+        $("#msg-button").click(function() {
+          $("#live-chat").fadeIn(200);
+        });
+      });
+    </script>
+  </body>
+</html>

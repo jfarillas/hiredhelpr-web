@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Enterprise</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      href="../../vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="../../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../js/htmlinclude.js"></script>
+    <script src="../../js/issuecollector.js"></script>
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="../../shell/sidebar-enterprise.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="../../shell/header-enterprise.html"></div>
+
+        <div
+          class="container-fluid content-container animated animatedFadeInUp fadeInUp"
+        >
+          <div class="content-title">
+            <h1 class="">1234 Austin Drive, Austin TX 77001</h1>
+            <div id="msg-button" class="main-button">
+              <button class="btn blue-btn">Send Message</button>
+            </div>
+          </div>
+
+          <div class="main-table">
+            <div class="table-title">
+              <ul class="nav nav-tabs">
+                <li>
+                  <a data-toggle="tab" href="#leftThread" class="active">
+                    <span class="poolpro-block-head top-left-rad">
+                      Enterprise: Mainstreet Realty
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tab" href="#rightThread">
+                    <span class="poolpro-block-head top-right-rad">
+                      Pool Pro: Blue Pools (Justin David)
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="leftThread">
+                  <div class="row text-right message-desc">
+                    <span class="poolpro-auth">John Appleseedsss</span><br />
+                    <span class="poolpro-desc"
+                      >The picture after the cleaning is green.</span
+                    ><br />
+                    <span class="time-stamp">04/11/2019 10:00AM</span>
+                    <br />
+                  </div>
+                  <div class="row pull-right message-desc">
+                    <span class="enterprise-auth">Connor Pfister</span><br />
+                    <span class="poolpro-desc"
+                      >The timer was completely broken, so it needs to be fully
+                      replaced.</span
+                    ><br />
+                    <span class="time-stamp">04/08/2019 10:05AM</span>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rightThread">
+                  <div class="row pull-right message-desc">
+                    <span class="enterprise-auth">Connor Pfister</span><br />
+                    <span class="poolpro-desc"
+                      >The timer was completely broken, so it needs to be fully
+                      replaced.</span
+                    ><br />
+                    <span class="time-stamp">04/08/2019 10:05AM</span>
+                  </div>
+                  <div class="row text-right message-desc">
+                    <span class="poolpro-auth">John Appleseed</span><br />
+                    <span class="poolpro-desc"
+                      >The picture after the cleaning is green.</span
+                    ><br />
+                    <span class="time-stamp">04/11/2019 10:00AM</span>
+                    <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="live-chat">
+        <header class="clearfix">
+          <a href="#" class="chat-close">x</a>
+          <h4>Send Message</h4>
+          <!-- <span class="chat-message-counter">3</span> -->
+        </header>
+        <div class="chat">
+          <div class="chat-history">
+            <div class="msg-thread">
+              <div class="right-msg">
+                <p class="msg-name">John Appleseed</p>
+                <p class="msg-text">The picture after the cleaning is green.</p>
+                <p class="msg-date">04/8/2019 10:00 Am</p>
+              </div>
+              <div class="left-msg">
+                <p class="msg-name">Connor Pfister</p>
+                <p class="msg-text">
+                  The timer was completely broken, so it needs to be fully
+                  replaced.
+                </p>
+                <p class="msg-date">04/11/2019 10:05 Am</p>
+              </div>
+              <div class="right-msg">
+                <p class="msg-name">John Appleseed</p>
+                <p class="msg-text">The picture after the cleaning is green.</p>
+                <p class="msg-date">04/8/2019 10:00 Am</p>
+              </div>
+              <div class="left-msg">
+                <p class="msg-name">Connor Pfister</p>
+                <p class="msg-text">
+                  The timer was completely broken, so it needs to be fully
+                  replaced.
+                </p>
+                <p class="msg-date">04/11/2019 10:05 Am</p>
+              </div>
+              <div class="right-msg">
+                <p class="msg-name">John Appleseed</p>
+                <p class="msg-text">The picture after the cleaning is green.</p>
+                <p class="msg-date">04/8/2019 10:00 Am</p>
+              </div>
+              <div class="left-msg">
+                <p class="msg-name">Connor Pfister</p>
+                <p class="msg-text">
+                  The timer was completely broken, so it needs to be fully
+                  replaced.
+                </p>
+                <p class="msg-date">04/11/2019 10:05 Am</p>
+              </div>
+            </div>
+          </div>
+          <!-- end chat-history -->
+          <form action="#" method="post">
+            <fieldset>
+              <textarea
+                type="text"
+                placeholder="Any questions we can answer regarding this work order?"
+              ></textarea>
+            </fieldset>
+          </form>
+        </div>
+        <!-- end chat -->
+      </div>
+      <!-- /#page-content-wrapper --->
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      jQuery(document).ready(function($) {
+        $("*[data-href]").on("click", function() {
+          window.location = $(this).data("href");
+        });
+        //CHAT BOX//
+        $("#live-chat header").on("click", function() {
+          $(".chat").slideToggle(300, "swing");
+          $(".chat-message-counter").fadeToggle(300, "swing");
+        });
+        $(".chat-close").on("click", function(e) {
+          e.preventDefault();
+          $("#live-chat").fadeOut(300);
+        });
+        $(document).ready(function() {
+          $("#msg-button").click(function() {
+            $("#live-chat").fadeIn(200);
+          });
+        });
+      });
+      includeHTML();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Admin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/htmlinclude.js"></script>
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="../shell/sidebar.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="../shell/header.html"></div>
+
+        <div class="container-fluid content-container">
+          <div class="content-title">
+            <h1 class="">
+              Cleaning No. <span>00025</span> (<span>00/00/0000</span>)
+            </h1>
+            <div class="main-button">
+              <button class="btn blue-btn">Message Us</button>
+            </div>
+          </div>
+
+          <div class="main-gridbox">
+            <div class="row">
+              <div class="col">
+                <p class="gridbox-title">Address on Home</p>
+                <button
+                  class="btn"
+                  data-toggle="modal"
+                  data-target="#viewPhoto"
+                >
+                  View Photo
+                </button>
+              </div>
+              <div class="col">
+                <p class="gridbox-title">Fence Around Pool</p>
+                <div class="per-issue">
+                  <p>
+                    Is there a fence around the pool/backyard:
+                    <strong>Yes</strong>
+                  </p>
+                  <button class="btn">View Photo</button>
+                </div>
+                <div class="per-issue">
+                  <p>
+                    Is the gate able to close and lock? <strong>Yes</strong>
+                  </p>
+                  <button class="btn">View Photo</button>
+                </div>
+              </div>
+              <div class="col">
+                <p class="gridbox-title">Picture of Pool Before</p>
+                <div class="per-issue">
+                  <button class="btn">View Photo</button>
+                </div>
+              </div>
+              <div class="col">
+                <p class="gridbox-title">Test and add chemicals</p>
+                <div class="per-issue">
+                  <button class="btn">View Photo</button>
+                </div>
+              </div>
+              <div class="col">
+                <p class="gridbox-title">Picture of Pool After Cleaning</p>
+                <div class="per-issue">
+                  <button class="btn">View Photo</button>
+                </div>
+              </div>
+              <div class="col">
+                <p class="gridbox-title">Miscellaneous Issues</p>
+                <div class="per-issue">
+                  <button class="btn">Go to Maintenance</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--container-fluid-->
+
+        <div class="container-fluid content-container no-pt">
+          <div class="content-title">
+            <h1 class="">Identify Issue (<span>Picture received</span>)</h1>
+            <div class="main-button red-btn">
+              <button
+                class="btn red-btn"
+                id="deleteIdentifyIssue"
+                data-toggle="modal"
+                data-target="#requestPicture"
+              >
+                Delete
+              </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <button
+                class="btn green-btn"
+                data-toggle="modal"
+                data-target="#requestPicture"
+              >
+                Request Picture from Pro
+              </button>
+            </div>
+          </div>
+
+          <div class="main-gridbox">
+            <div class="row">
+              <!-- COLUMN IF NO ISSUE -->
+              <!-- <div class="col placeholder-midtxt" id="emptyIdentifyIssue">
+                <h4>
+                  Please check message history to identify the issue and then request resolution from pro.
+                </h4>
+              </div> -->
+              <!-- COLUMN FOR SOLVED ISSUE -->
+              <div class="col col-md-2" id="withIdentifyIssue">
+                <p class="gridbox-title">Picture of Pool After Cleaning</p>
+                <button
+                  class="btn"
+                  data-toggle="modal"
+                  data-target="#issuePhoto"
+                >
+                  View Photo
+                </button>
+                <p class="pic-requested">
+                  Picture requested on<br />04/10/2019
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--container-fluid-->
+
+        <div class="container-fluid content-container no-pt">
+          <div class="content-title">
+            <h1 class="">
+              Message History
+            </h1>
+          </div>
+
+          <div class="main-table">
+            <div class="table-title">
+              <ul class="nav nav-tabs">
+                <li>
+                  <a data-toggle="tab" href="#leftThread" class="active">
+                    <span class="poolpro-block-head top-left-rad">
+                      Enterprise: Mainstreet Realty
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tab" href="#rightThread">
+                    <span class="poolpro-block-head top-right-rad">
+                      Pool Pro: Blue Pools (Justin David)
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="leftThread">
+                  <div class="row text-right message-desc">
+                    <span class="poolpro-auth">John Appleseedsss</span><br />
+                    <span class="poolpro-desc"
+                      >The picture after the cleaning is green.</span
+                    ><br />
+                    <span class="time-stamp">04/11/2019 10:00AM</span>
+                    <br />
+                  </div>
+                  <div class="row pull-right message-desc">
+                    <span class="enterprise-auth">Connor Pfister</span><br />
+                    <span class="poolpro-desc"
+                      >The timer was completely broken, so it needs to be fully
+                      replaced.</span
+                    ><br />
+                    <span class="time-stamp">04/08/2019 10:05AM</span>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rightThread">
+                  <div class="row pull-right message-desc">
+                    <span class="enterprise-auth">Connor Pfister</span><br />
+                    <span class="poolpro-desc"
+                      >The timer was completely broken, so it needs to be fully
+                      replaced.</span
+                    ><br />
+                    <span class="time-stamp">04/08/2019 10:05AM</span>
+                  </div>
+                  <div class="row text-right message-desc">
+                    <span class="poolpro-auth">John Appleseed</span><br />
+                    <span class="poolpro-desc"
+                      >The picture after the cleaning is green.</span
+                    ><br />
+                    <span class="time-stamp">04/11/2019 10:00AM</span>
+                    <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--container-fluid-->
+      </div>
+      <!-- /#page-content-wrapper -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="viewPhoto"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body no-padding">
+              <div
+                class="full-photo"
+                style="background-image: url(../images/tab1.jpg);"
+              ></div>
+            </div>
+            <div class="modal-footer main-modal-footer">
+              <!-- <button type="button" class="btn approved-btn">
+                Approved
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--REQUEST PIC MODAL-->
+      <div
+        class="modal fade"
+        id="requestPicture"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Request new picture from pro?
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-field">
+                <select class="custom-select" id="">
+                  <option selected>Select task with issue</option>
+                  <option value="1">Address on Home</option>
+                  <option value="2">Fence Around the Pool</option>
+                  <option value="3">Picture of Pool Before Cleaning</option>
+                  <option value="1">Test and Add Chemicals</option>
+                  <option value="1">Picture of Pool After Cleaning</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label>Provide instructions to pro below:</label>
+                <textarea
+                  placeholder="What should the pro do to resolve the issue?"
+                ></textarea>
+              </div>
+
+              <div class="add-issue-icon">
+                <div>+</div>
+                Add another issue
+              </div>
+            </div>
+            <div class="modal-footer main-modal-footer">
+              <button type="button" id="sendRequest" class="btn approved-btn">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIEW ISSUE PHOTO MODAL -->
+      <div
+        class="modal fade"
+        id="issuePhoto"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                1234 Austin Drive, Austin TX 77001
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body main-modalbody">
+              <div class="row">
+                <div class="col-md-6 no-padding">
+                  <div class="modal-tab-btn" id="modaltabbtn">
+                    <button class="btn1 tab-btn active">
+                      Picture of Pool After Cleaning
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6 no-padding">
+                  <div class="modal-img"></div>
+                </div>
+              </div>
+            </div>
+            <div class="identify-issue-desc">
+              <p>Condition: <span>Not Applicable</span></p>
+              <p>Comments by pro: <span>Not Applicable</span></p>
+            </div>
+            <div class="modal-footer main-modal-footer">
+              <button type="button" class="btn approved-btn">
+                Send To REIT
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      includeHTML();
+    </script>
+  </body>
+</html>

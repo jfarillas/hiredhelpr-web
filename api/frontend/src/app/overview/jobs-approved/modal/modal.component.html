@@ -1,0 +1,47 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title">
+      1234 Austin Drive, Austin TX 77001
+    </h5>
+    <button
+      type="button"
+      class="close"
+      data-dismiss="modal"
+      aria-label="Close"
+      (click)="activeModal.dismiss('Cross click')"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body main-modalbody">
+    <div class="row">
+      <div class="col-md-6 no-padding">
+        <div class="modal-tab-btn">
+          <button (click)="selected(0)" [class.active]="selectedIndex === 0" class="tab-btn">
+            Address on the Home
+          </button>
+          <button (click)="selected(1)" [class.active]="selectedIndex === 1" class="btn2 tab-btn">
+            Fence Around The Pool
+          </button>
+          <button (click)="selected(2)" [class.active]="selectedIndex === 2" class="btn3 tab-btn">
+            Pool Before the Cleaning
+          </button>
+          <button (click)="selected(3)" [class.active]="selectedIndex === 3" class="btn4 tab-btn">
+            Pool after the cleaning
+          </button>
+          <button (click)="selected(4)" [class.active]="selectedIndex === 4" class="btn5 tab-btn">
+            Test and Add Chemicals
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6 no-padding">
+        <div class="modal-img" [style.background-image]="getUrl()"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer main-modal-footer">
+    <button type="button" class="btn approved-btn">
+      Approved
+    </button>
+  </div>
+</div>

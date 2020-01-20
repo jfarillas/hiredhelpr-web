@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 47 47" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <linearGradient x1="0" y1="0" x2="1" y2="1" id="gradient_1">
+      <stop offset="0" stop-color="#00E0F2" />
+      <stop offset="1" stop-color="#00BEE0" />
+    </linearGradient>
+  </defs>
+  <path d="M23.5 47C36.4787 47 47 36.4787 47 23.5C47 10.5213 36.4787 0 23.5 0C10.5213 0 0 10.5213 0 23.5C0 36.4787 10.5213 47 23.5 47Z" id="Oval" fill="url(#gradient_1)" stroke="none" />
+  <g id="noun_bar-graph_2493130" transform="translate(14.44299 14)">
+    <path d="M1 19C0.447715 19 0 18.6728 0 18.2692L0 0.730769C0 0.327177 0.447715 0 1 0C1.55228 0 2 0.327177 2 0.730769L2 18.2692C2 18.6728 1.55228 19 1 19Z" transform="translate(17 0)" id="Path" fill="#FFFFFF" stroke="none" />
+    <path d="M1 13C0.447715 13 0 12.6767 0 12.2778L0 0.722222C0 0.32335 0.447715 0 1 0C1.55228 0 2 0.32335 2 0.722222L2 12.2778C2 12.6767 1.55228 13 1 13Z" transform="translate(6 6)" id="Path" fill="#FFFFFF" stroke="none" />
+    <path d="M1 16C0.447715 16 0 15.4883 0 14.8571L0 1.14286C0 0.511675 0.447715 0 1 0C1.55228 0 2 0.511675 2 1.14286L2 14.8571C2 15.4883 1.55228 16 1 16Z" transform="translate(11 3)" id="Path" fill="#FFFFFF" stroke="none" />
+    <path d="M1 7C0.447715 7 0 6.6866 0 6.3L0 0.7C0 0.313401 0.447715 0 1 0C1.55228 0 2 0.313401 2 0.7L2 6.3C2 6.6866 1.55228 7 1 7Z" transform="translate(0 12)" id="Path" fill="#FFFFFF" stroke="none" />
+  </g>
+</svg>

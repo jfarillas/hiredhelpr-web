@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Enterprise</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      href="../../vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="../../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../js/htmlinclude.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/issuecollector.js"></script>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="../../shell/sidebar-enterprise.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="../../shell/header-enterprise.html"></div>
+
+        <div class="container-fluid content-container">
+          <div class="content-title">
+            <h1 class="">Service History</h1>
+            <div class="page-search">
+              <input
+                type="search"
+                name="search"
+                placeholder="Search by address..."
+              />
+            </div>
+          </div>
+          <div class="main-table">
+            <div class="table-title">
+              <table class="table">
+                <tbody class="main-tbody">
+                  <tr class="clickable-row" data-href="service.html">
+                    <td>Service No. 00021 (04/07/2019)</td>
+                    <td class="pull-right arrow-box">
+                      <img
+                        class="forward-arrow"
+                        src="../../images/arrow-forward.svg"
+                      />
+                    </td>
+                  </tr>
+                  <tr class="clickable-row" data-href="service.html">
+                    <td>Service No. 00021 (34/01/2018)</td>
+                    <td class="pull-right arrow-box">
+                      <img
+                        class="forward-arrow"
+                        src="../../images/arrow-forward.svg"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      jQuery(document).ready(function($) {
+        $("*[data-href]").on("click", function() {
+          window.location = $(this).data("href");
+        });
+      });
+      includeHTML();
+    </script>
+  </body>
+</html>

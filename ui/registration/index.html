@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Enterprise</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script src="../js/htmlinclude.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+    <script type="text/javascript">
+      jQuery.ajax({
+        url:
+          "https://jira.tiburondata.com/s/510de82fe11f8debf09626f25eb837bb-T/en_USp0g9dl/64022/167/1.4.26/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-US&collectorId=8bd60590",
+        type: "get",
+        cache: true,
+        dataType: "script"
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="container-fluid h-100">
+      <div class="row justify-content-center h-100">
+        <div class="col-6 hidden-md-down left-pane">
+          <div class="logo">
+            <span class="logo-main">Hired</span
+            ><span class="helpr-main">Helpr</span>
+          </div>
+          <div class="testimonial-shell">
+            <div class="testimonial">
+              <div class="rotator1">
+                <div class="statement">
+                  “HiredHelpr
+                  <span class="highlight">does everything for you.</span> All I
+                  have to do is show up, record the readings through my phone
+                  and I’m done.
+                </div>
+                <div class="auth">
+                  <img class="avatar" src="/images/avatar.jpg" /><span
+                    class="auth-name highlight"
+                    >Ryan Jones</span
+                  >
+                  CEO, Pools service of America
+                </div>
+              </div>
+              <div class="rotator2">
+                <div class="statement">
+                  “HiredHelpr
+                  <span class="highlight">does everything for you.</span> All I
+                  have to do is show up, record the readings through my phone
+                  and I’m done.
+                </div>
+                <div class="auth">
+                  <img class="avatar" src="/images/avatar.jpg" /><span
+                    class="auth-name highlight"
+                    >Ryan Jones</span
+                  >
+                  CEO, Pools service of America
+                </div>
+              </div>
+              <div class="rotator3">
+                <div class="statement">
+                  “HiredHelpr
+                  <span class="highlight">does everything for you.</span> All I
+                  have to do is show up, record the readings through my phone
+                  and I’m done.
+                </div>
+                <div class="auth">
+                  <img class="avatar" src="/images/avatar.jpg" /><span
+                    class="auth-name highlight"
+                    >Ryan Jones</span
+                  >
+                  CEO, Pools service of America
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 ">
+          <div class="row mt-5 animated animatedFadeInUp fadeInUp">
+            <div class="col-12 pl-5 mb-5  ">
+              <h2 class="pb-3">Nationwide Pool Care Made Easy</h2>
+              <sub>We Service Pools Forever with No Hassle. </sub>
+            </div>
+            <div class="col-8 mt-5 ml-5 signupfields">
+              <div class="form-field">
+                <label>WORK EMAIL ADDRESS</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="john@mainstreet.com"
+                />
+              </div>
+              <div class="form-field mt-4">
+                <label>FULL NAME</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="John Appleseed"
+                />
+              </div>
+              <div class="form-field mt-4 ">
+                <label>PASSWORD (8 OR MORE CHARACTERS)</label>
+                <input type="password" name="password" />
+              </div>
+              <div class="main-button-action mt-4">
+                <button
+                  class="btn blue-btn"
+                  data-toggle="modal"
+                  data-target="#addCreditCard"
+                >
+                  Continue
+                </button>
+              </div>
+              <div class="forgotpassword mt-3">
+                Already have an account? <a href="../sign-in.html">Sign In</a>
+              </div>
+              <div class="disclaimer mt-5">
+                By clicking “Get Started” I agree to HiredHelpr’s
+                <span>Terms of Service</span> and <span>Privacy Policy.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <!-- /#wrapper -->
+
+    <!-- Menu Toggle Script -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".testimonial").on("init", function(event, slick) {
+          var $items = slick.$dots.find("li");
+          $items.addClass("slickdot");
+          $items.find("button").remove();
+        });
+        $(".testimonial").slick({
+          dots: true,
+          arrows: false,
+          autoplay: true,
+          speed: 1750,
+          autoplaySpeed: 7000
+        });
+      });
+    </script>
+  </body>
+</html>

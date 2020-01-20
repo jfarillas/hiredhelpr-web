@@ -1,0 +1,142 @@
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #9b9b9b;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.content-title h1 {
+  font-size: 24px;
+  line-height: 35px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.content-container {
+  padding: 3rem;
+  background: #f8f8f8;
+}
+
+.overview-box {
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 15px 5px #f5f5f5;
+  border-radius: 5px;
+}
+
+.overview-box.full {
+  width: 100%;
+  height: 332px;
+  font-size: 13px;
+}
+
+.page-search {
+  display: initial;
+  float: right;
+  box-shadow: 0px 0px 15px 0px #f5f5f5;
+}
+
+.page-search input {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 0;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.page-search input::placeholder {
+  color: #9b9b9b;
+}
+
+.main-table {
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px #f5f5f5;
+}
+
+.main-table {
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px #f5f5f5;
+}
+
+.table-title h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+.table-dropdown button {
+  padding: 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.table-dropdown button.dropdown-item {
+  font-weight: 400;
+  padding: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.table-dropdown .dropdown-menu {
+  padding-bottom: 0;
+}
+
+.main-tbody tr th {
+  padding: 1.3rem;
+}
+
+.main-tbody td {
+  vertical-align: top;
+  padding: 1.2rem 0.5rem;
+  border-top: 2px solid #eee;
+}
+
+.main-tbody td:first-child {
+  padding-left: 1.5rem;
+}
+
+.main-tbody td:last-child {
+  padding-right: 1.5rem;
+}
+
+table .main-thead th {
+  padding: 1.2rem 0.5rem;
+  border-bottom: 2px solid #eee;
+  border-top: 0;
+}
+
+table .main-thead th:first-child {
+  padding-left: 1.5rem;
+}
+
+table .main-thead th:last-child {
+  padding-right: 1.5rem;
+}
+
+.main-tbody td a {
+  text-decoration: underline;
+}
+
+td.table-issue-width {
+  width: 200px;
+}
+
+.placeholder-midtxt h4 {
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}

@@ -1,0 +1,50 @@
+<div class="container-fluid h-100">
+  <div class="row justify-content-center h-100">
+    <div class="col-6 hidden-md-down left-pane">
+      <div class="logo"><span class="logo-main">Hired</span><span class="helpr-main">Helpr</span></div>
+      <app-carousel></app-carousel>
+    </div>
+    <div class="col-6 ">
+      <div class="row mt-5  animated animatedFadeInUp fadeInUp">
+        <div class="col-12 pl-5 mb-5">
+          <h2 class="pb-3">Nationwide Pool Care Made Easy</h2>
+          <sub>We Service Pools Forever with No Hassle. </sub>
+        </div>
+        <div class="col-7 mt-5 ml-5 signupfields">
+          <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" (keydown.enter)="$event.preventDefault()" novalidate>
+            <!-- <div class="alert alert-danger" [hidden]="!hasError" translate>
+                            Username or Password Incorrect.
+                        </div> -->
+            <div class="form-field">
+              <label>WORK EMAIL ADDRESS</label>
+              <input name="useremail" ngModel required email="true" #useremail="ngModel" />
+              <small [hidden]="useremail.valid || useremail.untouched">
+                Email is Required.
+              </small>
+            </div>
+            <div class="form-field mt-4 ">
+              <label>PASSWORD</label>
+              <input name="password" ngModel required #password="ngModel" />
+              <small [hidden]="password.valid || password.untouched">
+                Password is Required.
+              </small>
+            </div>
+            <!-- <div class="form-field mt-4 ">
+                          <label>PASSWORD (8 OR MORE CHARACTERS)</label>
+                          <input type="password " name="password " placeholder="Password " />
+                      </div> -->
+            <div class="main-button-action mt-4 ">
+              <button class="btn blue-btn">
+                Log in
+              </button>
+            </div>
+          </form>
+          <div class="forgotpassword mt-3 ">
+            Don’t have an account?
+            <a [routerLink]="['/signup']">Create an Account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

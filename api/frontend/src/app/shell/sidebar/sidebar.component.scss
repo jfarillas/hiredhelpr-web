@@ -1,0 +1,150 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+.overview-boxicon {
+}
+
+oval {
+  height: 57px;
+  width: 57px;
+  background: linear-gradient(135deg, #00e0f2 0%, #00bee0 100%);
+  border-radius: 50px;
+  margin: auto;
+}
+
+.header-title-box {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+.list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.content-container {
+  padding: 3rem;
+  background: #f8f8f8;
+}
+
+.warning {
+  color: #ba0e0e;
+  font-weight: bold;
+}
+
+.sidebar-nav p {
+  margin: 0;
+  color: #9b9b9b;
+}
+
+.active .sidebar-nav p {
+  color: #000;
+}
+
+.overview-box {
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 15px 5px #f5f5f5;
+  border-radius: 5px;
+}
+
+.overview-box.full {
+  width: 100%;
+  height: 332px;
+  font-size: 13px;
+}
+
+.content-title h1 {
+  font-size: 24px;
+  line-height: 35px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.circle {
+  width: 47px;
+  height: 47px;
+}
+
+.main-table {
+  background: #fff;
+}
+
+.table-title h4 {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+.table-dropdown button {
+  padding: 0;
+  font-weight: 700;
+}
+
+.table-dropdown button.dropdown-item {
+  font-weight: 400;
+  padding: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.table-dropdown .dropdown-menu {
+  padding-bottom: 0;
+}
+
+.main-tbody tr th {
+  padding: 1.3rem;
+}
+
+.main-tbody td {
+  vertical-align: middle;
+  padding: 1.2rem 0 1.2rem 1.5rem;
+}
+
+.main-thead th {
+  padding: 1.2rem 0 1.2rem 1.5rem;
+}
+
+.main-tbody td a {
+  text-decoration: underline;
+}
+
+.modal-btn button {
+  padding: 0;
+  text-decoration: underline;
+  color: #007bff;
+}
+
+/*RESPONSIVE*/
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+    background: #f8f8f8;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}

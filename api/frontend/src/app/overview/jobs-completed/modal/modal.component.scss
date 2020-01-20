@@ -1,0 +1,125 @@
+.modal-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.main-modalbody .row {
+  margin: 0;
+}
+
+.main-modalbody {
+  padding: 0;
+}
+
+.modal-tab-btn button {
+  background: #fff;
+  border: 0;
+  border-bottom: 2px solid #efefef;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+}
+
+.modal-tab-btn .active {
+  background: #0057c1;
+  color: #fff;
+  border-bottom: 2px solid #0057c1;
+}
+
+.modal-footer.main-modal-footer {
+  padding: 3rem 1rem;
+  justify-content: unset;
+  align-items: unset;
+  display: block;
+  text-align: center;
+}
+
+.main-modal-footer .approved-btn {
+  background: #0eba58;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px;
+  width: 200px;
+}
+
+.modal-footer .ticket-link {
+  margin: 2rem 0 0;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.modal-footer .ticket-link button:focus {
+  outline: 0;
+}
+
+.modal-img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.modal-footer .ticket-link {
+  margin: 2rem 0 0;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.modal-footer .ticket-link button {
+  color: #9b9b9b;
+  text-decoration: underline;
+  background: none;
+  border: 0;
+  font-size: 14px;
+  padding: 0;
+}
+
+.modal-ticket-wrapper {
+  margin-top: 1.5rem;
+  transition: all 0.2s;
+  display: none;
+}
+
+.modal-ticket-wrapper textarea {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  height: 80px;
+  border: 2px solid #eeeeee;
+  border-radius: 4px;
+}
+
+.modal-ticket-wrapper textarea::placeholder {
+  color: #9b9b9b;
+}
+
+.modal-ticket-wrapper p {
+  font-size: 12px;
+  text-align: left;
+  color: #9b9b9b;
+}
+
+.modal-ticket-wrapper .submit-ticket-btn {
+  color: #4a4a4a;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #eeee;
+  padding: 15px;
+  width: 200px;
+}
+
+.modal-ticket-wrapper .submit-ticket-btn.enable {
+  background: #0057c1;
+  color: #fff;
+}
+
+.showSupportForm {
+  display: block;
+}
+
+.hideSupportForm {
+  display: none;
+}

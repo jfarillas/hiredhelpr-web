@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HiredHelpr Admin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/htmlinclude.js"></script>
+    <style type="text/css">
+      .forward-arrow {
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div w3-include-html="../shell/sidebar.html"></div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div w3-include-html="../shell/header.html"></div>
+
+        <div class="container-fluid content-container">
+          <div class="content-title">
+            <h1 class="">Maintenance</h1>
+            <div class="page-search">
+              <input
+                type="search"
+                name="search"
+                placeholder="Search by invoice number..."
+              />
+            </div>
+          </div>
+
+          <div class="main-table">
+            <div class="table-title">
+              <table class="table">
+                <thead class="main-thead">
+                  <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Fix Started</th>
+                    <th scope="col">Fix Completed</th>
+                    <th scope="col">Date of Payment</th>
+                    <th scope="col">Amount Paid</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Download</th>
+                  </tr>
+                </thead>
+                <tbody class="main-tbody">
+                  <tr>
+                    <td>00021</td>
+                    <td>04/07/2019</td>
+                    <td>04/10/2019</td>
+                    <td>05/10/2019</td>
+                    <td>$400</td>
+                    <td><span>Pending</span></td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-download"
+                        data-toggle="modal"
+                        data-target="#exampleModal2"
+                      ></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00021</td>
+                    <td>04/07/2019</td>
+                    <td>04/10/2019</td>
+                    <td>05/10/2019</td>
+                    <td>$400</td>
+                    <td><span class="paid">Paid</span></td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-download"
+                        data-toggle="modal"
+                        data-target="#exampleModal2"
+                      ></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      includeHTML();
+    </script>
+  </body>
+</html>
