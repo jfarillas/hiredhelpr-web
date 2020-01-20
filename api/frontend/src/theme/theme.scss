@@ -7,6 +7,27 @@
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  height: 100vh;
+}
+.slick-dots {
+  position: initial;
+  text-align: left !important;
+  color: white;
+  list-style: none !important;
+}
+
+.slick-dots li button:before {
+  content: unset;
+}
+
+.slick-dots li {
+  background: white;
+  list-style-type: none;
+}
+
+.slick-dots li.slick-active {
+  background: blue;
 }
 
 /* Assign Fonts*/
