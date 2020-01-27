@@ -2,8 +2,8 @@
 
 set -e
 
-# possible -b (base / app name) -i (image version), -e (deploy env), -s (service id), -r (aws region) and -m (Image)
-while getopts b:i:e:s:r:m: option
+# possible -b (base / app name) -i (image version), -e (deploy env), -s (service id), -r (aws region), -m (Image) and -v (Version)
+while getopts b:i:e:s:r:m:v: option
 do
 case "${option}"
 in
@@ -13,6 +13,7 @@ e) DEPLOY_ENV=${OPTARG};;
 #s) SERVICE_ID=${OPTARG};;
 r) REGION=${OPTARG};;
 m) IMG=${OPTARG};;
+v) VER=${OPTARG};;
 esac
 done
 
@@ -22,6 +23,7 @@ echo "DEPLOY_ENV: " $DEPLOY_ENV
 #echo "SERVICE_ID: " $SERVICE_ID
 echo "REGION: " $REGION
 echo "IMG: " $IMG
+echo "VER: " $VER
 
 if [ -z "$BASE_NAME" ]; then
     echo "exit: No BASE_NAME specified"
@@ -53,10 +55,15 @@ if [ -z "$IMG" ]; then
     exit;
 fi
 
+if [ -z "$VER" ]; then
+    echo "exit: No IMAGE specified"
+    exit;
+fi
+
 # Define variables
-TASK_FAMILY=${BASE_NAME}-${DEPLOY_ENV}-task-definition
-SERVICE_NAME=${BASE_NAME}-${DEPLOY_ENV}-service
-CLUSTER_NAME=${BASE_NAME}-${DEPLOY_ENV}
+TASK_FAMILY=${BASE_NAME}-${DEPLOY_ENV}-task-definition-v3
+SERVICE_NAME=${BASE_NAME}-${DEPLOY_ENV}-service-${VER}
+CLUSTER_NAME=${BASE_NAME}-${DEPLOY_ENV}-${VER}
 
 IMGAGE_PACEHOLDER="<IMGAGE_VERSION>"
 
@@ -64,7 +71,7 @@ CONTAINER_DEFINITION_FILE=$(cat ${BASE_NAME}web-webgui.container-definition.json
 CONTAINER_DEFINITION="${CONTAINER_DEFINITION_FILE//$IMGAGE_PACEHOLDER/$IMG_VERSION}"
 
 #export TASK_VERSION=$(aws ecs register-task-definition --family ${TASK_FAMILY} --container-definitions "$CONTAINER_DEFINITION" | jq --raw-output '.taskDefinition.revision')
-export TASK_VERSION=2
+export TASK_VERSION=4
 export CLUSTER_CHECK=$(aws ecs describe-clusters --cluster $CLUSTER_NAME --region $REGION)
 echo "Registered ECS Task Definition: " $TASK_VERSION
 
@@ -96,19 +103,24 @@ if [ -n "$TASK_VERSION" ]; then
     tasks=$(aws ecs --region $REGION list-tasks --cluster $CLUSTER_NAME | jq -r '.taskArns | map(.[40:]) | reduce .[] as $item (""; . + $item + " ")')
     echo "Tasks are as follows" 
     echo $tasks
-    TASKS=$(aws ecs --region $REGION describe-tasks --cluster $CLUSTER_NAME --task $tasks);
-    #   - echo $TASKS
-    OLDER_TASK=$(echo $TASKS | jq -r ".tasks[] | select(.taskDefinitionArn = \"$CURRENT_TASK_REVISION\") | .taskArn | split(\"/\") | .[1] ")
-    echo "Older Task running  " + $OLDER_TASK
-    for old_task in $OLDER_TASK; do
-       DELETE_CURRENT_TASK=$(aws ecs --region $REGION stop-task --cluster $CLUSTER_NAME --task $old_task)
-       echo "$DELETE_CURRENT_TASK"
-    done
+    # TASKS=$(aws ecs --region $REGION describe-tasks --cluster $CLUSTER_NAME --task $tasks);
+    
+    # OLDER_TASK=$(echo $TASKS | jq -r ".tasks[] | select(.taskDefinitionArn = \"$CURRENT_TASK_REVISION\") | .taskArn | split(\"/\") | .[1] ")
+    # echo "Older Task running  " + $OLDER_TASK
+    # for old_task in $OLDER_TASK; do
+    #    DELETE_CURRENT_TASK=$(aws ecs --region $REGION stop-task --cluster $CLUSTER_NAME --task $old_task)
+    #    echo "$DELETE_CURRENT_TASK"
+    # done
      
     # Run new tasks with the updated new Task-definition
     DEPLOYED_SERVICE=$(aws ecs update-service --cluster $CLUSTER_NAME --region $REGION --service $SERVICE_NAME --task-definition $TASK_FAMILY:$TASK_VERSION | jq --raw-output '.service.serviceName')
     
     echo "$DEPLOYED_SERVICE deployment complete"
+
+    # Time needed for the current task to run
+    SLEEP_TIME=30
+    SLEEP=$(sleep $SLEEP_TIME)
+    echo "Time needed for the current task to run: $SLEEP_TIME secs"
 
 else
     echo "exit: No task definition"

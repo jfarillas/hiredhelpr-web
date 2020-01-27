@@ -3,12 +3,11 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-# image: php:7.2-fpm
 image: atlassian/default-image:2
 
 pipelines:
   branches:
-    "{dev,feature/ui}":
+    "{feature/ui}":
       # - step:
       #     services:
       #       - docker
@@ -26,7 +25,7 @@ pipelines:
       #       # build the Docker image (this will use the Dockerfile in the root of the repo)
       #       - docker build -t $IMAGE_NAME .
       #       # authenticate with the Docker Hub registry1
-      #       - echo "$DOCKER_HUB_PASSWORD" | docker login --username $DOCKER_HUB_USERNAME --password-stdin
+      #       - echo "$DOCKER_HUB_PASSWORD" | docker login --username $DOCKER_HUB_USERNAME --password-stdin 
       #       # push the new Docker image to the Docker registry
       #       - docker push $IMAGE_NAME
       - step:
@@ -36,12 +35,7 @@ pipelines:
           deployment: Staging
           script: # Modify the commands below to build your repository.
             # Restrict to dev branch only
-            - echo "only on dev and feature/ui"
-
-            # - apt-get update && apt-get install -y sudo && apt-get install -y systemd && apt-get install -y iputils-ping && apt-get install -y net-tools && apt-get install -y git && apt-get install -y libpng-dev && apt-get install -y libicu-dev && apt-get install -y libxml2-dev && apt-get install -y libzip-dev && apt-get install -y unzip && apt-get install -y python-minimal && apt-get install -y jq
-            # - docker-php-ext-install pdo pdo_mysql mysqli bcmath gd intl xml hash zip dom session opcache
-            # - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
+            - echo "only on dev"
             # Install latest AWS CLI
             - curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
             - unzip awscli-bundle.zip
@@ -51,17 +45,8 @@ pipelines:
             # AWS ECR login
             - eval $(aws ecr get-login --no-include-email --region ${AWS_DEFAULT_REGION}) | sed 's|https://||'
 
-            # Navigate Dockerfile in api folder
-            - cd api
-
-            # Push Docker to ECR
-            - export BUILD_ID=latest
-            - docker build -t ${BITBUCKET_REPO_SLUG}:$BUILD_ID .
-            - docker tag ${BITBUCKET_REPO_SLUG}:$BUILD_ID $AWS_REGISTRY_URL/$BITBUCKET_REPO_SLUG:$BUILD_ID
-            - docker push $AWS_REGISTRY_URL/$BITBUCKET_REPO_SLUG:$BUILD_ID
-
-            # Navigate Dockerfile in frontend folder
-            - cd frontend
+            # Navigate Dockerfile in ui folder
+            # - cd ui
 
             # Push Docker to ECR
             - export BUILD_ID=latest
@@ -70,14 +55,15 @@ pipelines:
             - docker push $AWS_REGISTRY_URL/$BITBUCKET_REPO_SLUG:$BUILD_ID
 
             # Navigate back to deploy-ecs.sh
-            - cd ../../
+            # - cd ../
 
-            # Auto deploy docker image to ECS for the API
+            # Auto deploy docker image to ECS
             # Update task definition & service
-            - bash ./deploy-ecs.sh -b hiredhelpr -e ${BITBUCKET_DEPLOYMENT_ENVIRONMENT} -i $BITBUCKET_DEPLOYMENT_ENVIRONMENT_$BUILD_ID -r ${AWS_DEFAULT_REGION} -m $AWS_REGISTRY_URL/$BITBUCKET_REPO_SLUG:$BUILD_ID -v v2
+            - bash ./deploy-ecs.sh -b hiredhelpr -e ${BITBUCKET_DEPLOYMENT_ENVIRONMENT} -i $BITBUCKET_DEPLOYMENT_ENVIRONMENT_$BUILD_ID -r ${AWS_DEFAULT_REGION} -m $AWS_REGISTRY_URL/$BITBUCKET_REPO_SLUG:$BUILD_ID
 
-            - bash ./run-api.sh -s 5 -l $SSH_LOGIN_URL -u $EC2_USER
-            # - php artisan serve --host=0.0.0.0 --port=8000
+            # Build docker image and run it
+            - docker-compose up --build -d
+  
       # - step:
       #     services:
       #       - docker
@@ -91,19 +77,26 @@ pipelines:
       #       - unzip awscli-bundle.zip
       #       - ./awscli-bundle/install -b ~/bin/aws
       #       - export PATH=~/bin:$PATH
+
       #       # AWS ECR login
       #       - eval $(aws ecr get-login --no-include-email --region ${AWS_DEFAULT_REGION}) | sed 's|https://||'
+            
       #       # Navigate Dockerfile in api folder
       #       - cd api
+
       #       # Push Docker to ECR
       #       - export BUILD_ID=latest
       #       - docker build -t ${BITBUCKET_REPO_SLUG}:$BUILD_ID .
       #       - docker tag ${BITBUCKET_REPO_SLUG}:$BUILD_ID $AWS_REGISTRY_URL/$BITBUCKET_REPO_SLUG:$BUILD_ID
       #       - docker push $AWS_REGISTRY_URL/$BITBUCKET_REPO_SLUG:$BUILD_ID
+
       #       # Navigate back to deploy-ecs.sh
       #       - cd ../
+
       #       # Auto deploy docker image to ECS
       #       # Update task definition & service
       #       - bash ./deploy-ecs.sh -b hiredhelprweb -s webgui -e ${BITBUCKET_DEPLOYMENT_ENVIRONMENT} -i $BITBUCKET_DEPLOYMENT_ENVIRONMENT_$BUILD_ID -r ${AWS_DEFAULT_REGION} -m $AWS_REGISTRY_URL/$BITBUCKET_REPO_SLUG:$BUILD_ID
+
       #       # Build docker image and run it
       #       - docker-compose up --build -d
+      
