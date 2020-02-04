@@ -7,7 +7,7 @@ jobs:
       - checkout
       # ... steps for building/testing app ...
 
-      # build and push Docker image
+      # Build and push Docker image
       - run: |
           TAG=0.1.$CIRCLE_BUILD_NUM
           docker build -t jfarillas/hiredhelpr-api:$TAG ./api
@@ -15,3 +15,8 @@ jobs:
           echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
           docker push jfarillas/hiredhelpr-api:$TAG
           docker push jfarillas/hiredhelpr-app:$TAG
+
+      # SSH Login to GCP
+      - run: |
+          gcloud compute ssh $INSTANCE_NAME --ssh-flag="-vvv"
+          docker --version
