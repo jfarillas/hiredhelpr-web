@@ -18,5 +18,10 @@ jobs:
 
       # SSH Login to GCP
       - run: |
-          gcloud compute ssh $INSTANCE_NAME --ssh-flag="-vvv"
-          docker --version
+          gcloud \
+          --quiet \
+          --project="${PROJECT}" \
+          compute ssh "${INSTANCE_NAME}" \
+          --zone "${ZONE}" \
+          --strict-host-key-checking=no \
+          --command "echo works"
